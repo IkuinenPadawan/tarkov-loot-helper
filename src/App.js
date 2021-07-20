@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header'
+import ItemList from './components/ItemList';
 import LevelPicker from './components/LevelPicker'
 import QuestPicker from './components/QuestPicker'
 
@@ -9,6 +10,7 @@ function App() {
       <Header title='Tarkov Loot Tool'/>
       <LevelPicker levels={20}/>
       <QuestPicker />
+      <ItemList />
     </div>
   );
 }
