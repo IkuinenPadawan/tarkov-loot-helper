@@ -5,7 +5,7 @@ import LevelPicker from './components/LevelPicker'
 function App() {
   return (
     <div className="App">
-      <Header title='Hello'/>
+      <Header title='Tarkov Loot Tool'/>
       <LevelPicker />
     </div>
   );
