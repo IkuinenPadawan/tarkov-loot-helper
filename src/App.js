@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header title='Tarkov Loot Tool'/>
-      <LevelPicker />
+      <LevelPicker levels={20}/>
     </div>
   );
 }

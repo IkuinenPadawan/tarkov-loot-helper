@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LevelPicker = () => {
+const LevelPicker = ({ levels }) => {
   const level = '0'
 
   function handleLevelChange() {
@@ -9,8 +9,9 @@ const LevelPicker = () => {
 
   const buildOptions = () => {
     var arr = [];
+    console.log(levels)
 
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= levels; i++) {
       arr.push(<option key={i} value="{i}">{i}</option>)
     }
 
@@ -19,7 +20,7 @@ const LevelPicker = () => {
 
   return (
     <div>
-      <label for='cars'>Choose a level:</label>
+      <label htmlFor='cars'>Choose a level:</label>
       <select name='level' id='cars'>
         {buildOptions()}
       </select>
