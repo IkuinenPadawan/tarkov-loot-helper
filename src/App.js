@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header'
 import LevelPicker from './components/LevelPicker'
-import QuestPicker from './components/QuestPicker';
+import QuestPicker from './components/QuestPicker'
 
 function App() {
   return (
