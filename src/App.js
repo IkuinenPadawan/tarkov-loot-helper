@@ -11,21 +11,43 @@ function App() {
     {
       id: 1,
       questName: 'Debut',
+      questGiver: 'Prapor',
       completed: false,
     },
     {
       id: 2,
       questName: 'Shortage',
+      questGiver: 'Therapist',
       completed: false,
     },
     {
       id: 3,
       questName: 'Acquintance',
+      questGiver: 'Jaeger',
       completed: false,
     },
     {
       id: 4,
       questName: 'Sanitary Standards pt1',
+      questGiver: 'Therapist',
+      completed: false,
+    },
+    {
+      id: 5,
+      questName: 'Supplier',
+      questGiver: 'Skier',
+      completed: false,
+    },
+    {
+      id: 6,
+      questName: 'Ice Cream Cones',
+      questGiver: 'Prapor',
+      completed: false,
+    },
+    {
+      id: 7,
+      questName: 'What\'s on the flash drive?',
+      questGiver: 'Skier',
       completed: false,
     },
   ]);
@@ -59,6 +81,26 @@ function App() {
        name: 'Gas Analyzer',
        quest: 4,
        img: 'img/Gas_Analyzer.png',
+     },
+     {
+       name: 'Module-3M bodyarmor',
+       quest: 5,
+       img: 'img/3M_icon.png',
+     },
+     {
+       name: 'TOZ-106 bolt-action shotgun',
+       quest: 5,
+       img: 'img/Toz.png',
+     },
+     {
+       name: '60-round 6L31 5.45x39 magazine for AK-74 and compatibles',
+       quest: 6,
+       img: 'img/6L31-60-mag_icon.png',
+     },
+     {
+       name: 'Flash Drive',
+       quest: 7,
+       img: 'img/Secure_Flash_drive_Icon.png',
      },
    ]);
 
