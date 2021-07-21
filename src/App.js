@@ -9,8 +9,28 @@ import QuestPicker from './components/QuestPicker';
 function App() {
    const [items, setItems] = useState([
      {
-       name: 'salewa',
+       name: 'Salewa',
        img: 'img/Salewa.png',
+     },
+     {
+       name: 'Mp-133',
+       img: 'img/Mp133.png',
+     },
+     {
+       name: 'Iskra Lunchbox',
+       img: 'img/Lunchbox.png',
+     },
+     {
+       name: 'Emelya Rye Croutons',
+       img: 'img/Emelya_Croutons.png',
+     },
+     {
+       name: 'Can of Delicious Beef Stew',
+       img: 'img/Can_of_beef_stew.png',
+     },
+     {
+       name: 'Gas Analyzer',
+       img: 'img/Gas_Analyzer.png',
      },
    ]);
   return (
