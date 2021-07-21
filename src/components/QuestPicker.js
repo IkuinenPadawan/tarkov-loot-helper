@@ -15,7 +15,14 @@ const QuestPicker = () => {
           name='acquintance'
           value='Acquintance'
         />
-        <label htmlFor='acquintance'> Acquintance</label>
+        <label htmlFor='Acquintance'> Acquintance</label>
+        <input
+          type='checkbox'
+          id='sanitaryStandards'
+          name='sanitaryStandards'
+          value='Sanitary Standards'
+        />
+        <label htmlFor='sanitaryStandards'> Sanitary Standards</label>
       </div>
     </div>
   );
