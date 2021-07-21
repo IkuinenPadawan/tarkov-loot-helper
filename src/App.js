@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-import './App.css';
-import Header from './components/Header';
-import ItemList from './components/ItemList';
-import LevelPicker from './components/LevelPicker';
-import QuestPicker from './components/QuestPicker';
+import './App.css'
+import Header from './components/Header'
+import ItemList from './components/ItemList'
+import LevelPicker from './components/LevelPicker'
+import QuestPicker from './components/QuestPicker'
 
 function App() {
   const [quests, setQuests] = useState([
@@ -67,8 +67,7 @@ function App() {
       quests.map((quest) =>
         quest.id === id ? { ...quest, completed: !quest.completed } : quest
       )
-    );
-     console.log(quests)
+    )
    }
 
   return (
@@ -81,4 +80,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
