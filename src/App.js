@@ -9,22 +9,26 @@ import QuestPicker from './components/QuestPicker';
 function App() {
   const [quests, setQuests] = useState([
     {
+      id: 1,
       questName: 'Debut',
-      completed: 'false'
+      completed: false,
     },
     {
+      id: 2,
       questName: 'Shortage',
-      completed: 'false'
+      completed: false,
     },
     {
+      id: 3,
       questName: 'Acquintance',
-      completed: 'false'
+      completed: false,
     },
     {
+      id: 4,
       questName: 'Sanitary Standards pt1',
-      completed: 'false'
+      completed: false,
     },
-  ])
+  ]);
    const [items, setItems] = useState([
      {
        name: 'Salewa',
@@ -57,11 +61,21 @@ function App() {
        img: 'img/Gas_Analyzer.png',
      },
    ]);
+
+   const checkQuests = (id) => {
+    setQuests(
+      quests.map((quest) =>
+        quest.id === id ? { ...quest, completed: !quest.completed } : quest
+      )
+    );
+     console.log(quests)
+   }
+
   return (
     <div className='App'>
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} />
-      <QuestPicker quests={quests}/>
+      <QuestPicker quests={quests} checkQuests={checkQuests}/>
       <ItemList items={items}/>
     </div>
   );
