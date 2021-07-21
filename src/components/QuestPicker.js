@@ -4,7 +4,7 @@ const QuestPicker = ({ quests, checkQuests }) => {
   const handleChange = (e) => {
     checkQuests(parseInt(e.target.id))
   }
-  
+
   return (
     <div>
       <h4>Quests completed</h4>

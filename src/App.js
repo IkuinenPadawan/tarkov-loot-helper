@@ -70,12 +70,22 @@ function App() {
     )
    }
 
+   const getIncompleteQuests = () => {
+     const activeQuests = []
+     quests.forEach(el => {
+       if(!el.completed) {
+         activeQuests.push(el.id)
+       }
+     })
+     return activeQuests
+   }
+
   return (
     <div className='App'>
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} />
       <QuestPicker quests={quests} checkQuests={checkQuests}/>
-      <ItemList items={items}/>
+      <ItemList items={items} activeQuests={getIncompleteQuests()} />
     </div>
   );
 }
