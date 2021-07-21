@@ -32,32 +32,32 @@ function App() {
    const [items, setItems] = useState([
      {
        name: 'Salewa',
-       quest: 'shortage',
+       quest: 2,
        img: 'img/Salewa.png',
      },
      {
        name: 'Mp-133',
-       quest: 'debut',
+       quest: 1,
        img: 'img/Mp133.png',
      },
      {
        name: 'Iskra Lunchbox',
-       quest: 'acquintance',
+       quest: 3,
        img: 'img/Lunchbox.png',
      },
      {
        name: 'Emelya Rye Croutons',
-       quest: 'acquintance',
+       quest: 3,
        img: 'img/Emelya_Croutons.png',
      },
      {
        name: 'Can of Delicious Beef Stew',
-       quest: 'acquintance',
+       quest: 3,
        img: 'img/Can_of_beef_stew.png',
      },
      {
        name: 'Gas Analyzer',
-       quest: 'sanitaryStandards',
+       quest: 4,
        img: 'img/Gas_Analyzer.png',
      },
    ]);
