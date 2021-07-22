@@ -58,6 +58,27 @@ function App() {
       completed: false,
       level: 8,
     },
+    {
+      id: 8,
+      questName: "Sanitary Standards pt2",
+      questGiver: 'Therapist',
+      completed: false,
+      level: 8,
+    },
+    {
+      id: 9,
+      questName: "Painkiller",
+      questGiver: 'Therapist',
+      completed: false,
+      level: 8,
+    },
+    {
+      id: 10,
+      questName: "Car Repair",
+      questGiver: 'Therapist',
+      completed: false,
+      level: 10,
+    },
   ]);
    const [items, setItems] = useState([
      {
@@ -94,7 +115,7 @@ function App() {
        name: 'Gas Analyzer',
        quest: 4,
        img: 'img/Gas_Analyzer.png',
-       amount: 3,
+       amount: 1,
      },
      {
        name: 'Module-3M bodyarmor',
@@ -119,6 +140,24 @@ function App() {
        quest: 7,
        img: 'img/Secure_Flash_drive_Icon.png',
        amount: 5,
+     },
+     {
+       name: 'Morphine',
+       quest: 9,
+       img: 'img/Morphine.png',
+       amount: 4,
+     },
+     {
+       name: 'Car Battery',
+       quest: 10,
+       img: 'img/CarBatt.png',
+       amount: 4,
+     },
+     {
+       name: 'Spark Plug',
+       quest: 10,
+       img: 'img/Sparkplug.png',
+       amount: 8,
      },
    ]);
 
