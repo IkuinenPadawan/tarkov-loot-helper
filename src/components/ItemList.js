@@ -4,12 +4,17 @@ import Item from './Item'
 const ItemList = ({ items, activeQuests }) => {
   return (
     <div>
-      {items.map((item) => (
-        activeQuests.includes(item.quest) ? <Item key={item.id} name={item.name} img={item.img} /> : null
-      )
-      )}
+      <ul className="item-list">
+        <li>
+          {items.map((item) =>
+            activeQuests.includes(item.quest) ? (
+              <Item key={item.id} name={item.name} img={item.img} amount={item.amount}/>
+            ) : null
+          )}
+        </li>
+      </ul>
     </div>
-  )
+  );
 }
 
 export default ItemList

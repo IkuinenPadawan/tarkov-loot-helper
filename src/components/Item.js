@@ -1,11 +1,12 @@
 import React  from 'react'
 
 
-const Item = ( {name, img} ) => {
+const Item = ( {name, img, amount} ) => {
   return (
-    <div>
-          <img src={img} alt="" />
-          <p>{name}</p>
+    <div className='item'>
+      <p id='amount'>x{amount}</p>
+      <img src={img} alt="" />
+      <p>{name}</p>
     </div>
   )
 }
