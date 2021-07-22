@@ -26,26 +26,6 @@ const QuestPicker = ({ quests, checkQuests }) => {
         </ul>
       </div>
     );
-
-  // return (
-  //   <div>
-  //     <h4>Quests completed</h4>
-  //     <div className='quest-picker'>
-  //       {quests.map((quest) => (
-  //         <div>
-  //           <input
-  //             type='checkbox'
-  //             id={quest.id}
-  //             name={quest.questName}
-  //             value={quest.questName}
-  //             onChange={handleChange}
-  //           />
-  //           <label htmlFor={quest.questName}> {quest.questName} </label>
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
 }
 
 export default QuestPicker
