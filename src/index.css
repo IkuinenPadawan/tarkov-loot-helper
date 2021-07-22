@@ -32,13 +32,18 @@ code {
   display: flex;
 }
 
-.item {
+.item-data {
   display: flex;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   align-items: center;
 }
 
-#amount {
+.amount {
   font-weight: bold;
   padding-right: 0.5rem;
+}
+
+.item-name {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
