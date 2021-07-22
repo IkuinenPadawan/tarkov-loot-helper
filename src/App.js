@@ -7,48 +7,56 @@ import LevelPicker from './components/LevelPicker'
 import QuestPicker from './components/QuestPicker'
 
 function App() {
+  const [level, setLevel] = useState(1)
   const [quests, setQuests] = useState([
     {
       id: 1,
       questName: 'Debut',
       questGiver: 'Prapor',
       completed: false,
+      level: 1,
     },
     {
       id: 2,
       questName: 'Shortage',
       questGiver: 'Therapist',
       completed: false,
+      level: 1,
     },
     {
       id: 3,
       questName: 'Acquintance',
       questGiver: 'Jaeger',
       completed: false,
+      level: 1,
     },
     {
       id: 4,
       questName: 'Sanitary Standards pt1',
       questGiver: 'Therapist',
       completed: false,
+      level: 4,
     },
     {
       id: 5,
       questName: 'Supplier',
       questGiver: 'Skier',
       completed: false,
+      level: 5,
     },
     {
       id: 6,
       questName: 'Ice Cream Cones',
       questGiver: 'Prapor',
       completed: false,
+      level: 9,
     },
     {
       id: 7,
-      questName: 'What\'s on the flash drive?',
+      questName: "What's on the flash drive?",
       questGiver: 'Skier',
       completed: false,
+      level: 8,
     },
   ]);
    const [items, setItems] = useState([
@@ -132,11 +140,15 @@ function App() {
      return activeQuests
    }
 
+   const handleLevelChange = (level) => {
+     setLevel(level)
+   }
+
   return (
     <div className='App'>
       <Header title='Tarkov Loot Tool' />
-      <LevelPicker levels={20} />
-      <QuestPicker quests={quests} checkQuests={checkQuests}/>
+      <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
+      <QuestPicker quests={quests} checkQuests={checkQuests} />
       <ItemList items={items} activeQuests={getIncompleteQuests()} />
     </div>
   );
