@@ -79,6 +79,34 @@ function App() {
       completed: false,
       level: 10,
     },
+    {
+      id: 11,
+      questName: "General Wares",
+      questGiver: 'Therapist',
+      completed: false,
+      level: 12,
+    },
+    {
+      id: 12,
+      questName: "Human Supplies",
+      questGiver: 'Peacekeeper',
+      completed: false,
+      level: 11,
+    },
+    {
+      id: 13,
+      questName: "Punisher pt 2",
+      questGiver: 'Prapov',
+      completed: false,
+      level: 17,
+    },
+    {
+      id: 14,
+      questName: "Dressed to kill",
+      questGiver: 'Ragman',
+      completed: false,
+      level: 15,
+    },
   ]);
    const [items, setItems] = useState([
      {
@@ -158,6 +186,36 @@ function App() {
        quest: 10,
        img: 'img/Sparkplug.png',
        amount: 8,
+     },
+     {
+       name: 'Tushonka- Can of Beef Stew',
+       quest: 11,
+       img: 'img/Tushonka.png',
+       amount: 15,
+     },
+     {
+       name: 'MRE lunch box',
+       quest: 12,
+       img: 'img/MRE.png',
+       amount: 5,
+     },
+     {
+       name: 'Lower half-mask',
+       quest: 13,
+       img: 'img/lowermask.png',
+       amount: 7,
+     },
+     {
+       name: 'Ushanka ear-flap cap',
+       quest: 14,
+       img: 'img/Ushanka.png',
+       amount: 2,
+     },
+     {
+       name: 'Kinda cowboy hat',
+       quest: 14,
+       img: 'img/Cowboyhat.png',
+       amount: 2,
      },
    ]);
 
