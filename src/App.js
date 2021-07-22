@@ -149,7 +149,7 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestPicker quests={quests} checkQuests={checkQuests} />
-      <ItemList items={items} activeQuests={getIncompleteQuests()} />
+      <ItemList items={items} activeQuests={getIncompleteQuests()} level={level} />
     </div>
   );
 }
