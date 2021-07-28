@@ -4,7 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import ItemList from './components/ItemList'
 import LevelPicker from './components/LevelPicker'
-import QuestPicker from './components/QuestPicker'
+import QuestList from './components/QuestList'
 
 function App() {
   const [level, setLevel] = useState(1)
@@ -245,7 +245,7 @@ function App() {
     <div className='App'>
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
-      <QuestPicker quests={quests} checkQuests={checkQuests} />
+      <QuestList quests={quests} checkQuests={checkQuests} />
       <ItemList items={items} activeQuests={getIncompleteQuests()} level={level} />
     </div>
   );
