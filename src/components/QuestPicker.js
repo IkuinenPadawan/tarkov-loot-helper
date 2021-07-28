@@ -7,7 +7,6 @@ const QuestPicker = ({ quests, checkQuests }) => {
 
     return (
       <div className='quest-picker'>
-        <h4>Quests completed</h4>
         <ul className='quest-list'>
           {quests.map((quest) => (
             <li>
@@ -19,7 +18,7 @@ const QuestPicker = ({ quests, checkQuests }) => {
                   value={quest.questName}
                   onChange={handleChange}
                 />
-                <label htmlFor={quest.questName}> {quest.questName} </label>
+                <label htmlFor={quest.questName}>{quest.questName} - {quest.questGiver} </label>
               </div>
             </li>
           ))}
