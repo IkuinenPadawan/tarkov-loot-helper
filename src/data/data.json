@@ -1,0 +1,431 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Salewa",
+      "img": "img/Salewa.png"
+    },
+    {
+      "id": 2,
+      "name": "Mp-133",
+      "img": "img/Mp133.png"
+    },
+    {
+      "id": 3,
+      "name": "Iskra Lunchbox",
+      "img": "img/Lunchbox.png"
+    },
+    {
+      "id": 4,
+      "name": "Emelya Rye Croutons",
+      "img": "img/Emelya_Croutons.png"
+    },
+    {
+      "id": 5,
+      "name": "Can of Delicious Beef Stew",
+      "img": "img/Can_of_beef_stew.png"
+    },
+    {
+      "id": 6,
+      "name": "Gas Analyzer",
+      "img": "img/Gas_Analyzer.png"
+    },
+    {
+      "id": 7,
+      "name": "Module-3M bodyarmor",
+      "img": "img/3M_icon.png"
+    },
+    {
+      "id": 8,
+      "name": "TOZ-106 bolt-action shotgun",
+      "img": "img/Toz.png"
+    },
+    {
+      "id": 9,
+      "name": "60-round 6L31 5.45x39 magazine for AK-74 and compatibles",
+      "img": "img/6L31-60-mag_icon.png"
+    },
+    {
+      "id": 10,
+      "name": "Flash Drive",
+      "img": "img/Secure_Flash_drive_Icon.png"
+    },
+    {
+      "id": 11,
+      "name": "Morphine",
+      "img": "img/Morphine.png"
+    },
+    {
+      "id": 12,
+      "name": "Car Battery",
+      "img": "img/CarBatt.png"
+    },
+    {
+      "id": 13,
+      "name": "Spark Plug",
+      "img": "img/Sparkplug.png"
+    },
+    {
+      "id": 14,
+      "name": "Tushonka- Can of Beef Stew",
+      "img": "img/Tushonka.png"
+    },
+    {
+      "id": 15,
+      "name": "MRE lunch box",
+      "img": "img/MRE.png"
+    },
+    {
+      "id": 16,
+      "name": "Lower half-mask",
+      "img": "img/lowermask.png"
+    },
+    {
+      "id": 17,
+      "name": "Ushanka ear-flap cap",
+      "img": "img/Ushanka.png"
+    },
+    {
+      "id": 18,
+      "name": "Kinda cowboy hat",
+      "img": "img/Cowboyhat.png"
+    },
+    {
+      "id": 19,
+      "name": "Bars A-2607",
+      "img": "img/A-2607_Bars.png"
+    },
+    {
+      "id": 20,
+      "name": "USEC Dogtag",
+      "img": "img/USEC_Dogtag_Icon.png"
+    },
+    {
+      "id": 21,
+      "name": "WD-40 100ml",
+      "img": "img/WD40_100ml_Icon.png"
+    },
+    {
+      "id": 22,
+      "name": "Clin Wipers",
+      "img": "img/Clin_Wiper_icon.png"
+    },
+    {
+      "id": 23,
+      "name": "Corrugated Hoses",
+      "img": "img/Hoseicon.png"
+    },
+    {
+      "id": 24,
+      "name": "Ox bleach",
+      "img": "img/Bleachicon.png"
+    },
+    {
+      "id": 25,
+      "name": "PC CPU",
+      "img": "img/PC_CPU_Icon.png"
+    },
+    {
+      "id": 26,
+      "name": "Rechargeable Battery",
+      "img": "img/Recicon.png"
+    },
+    {
+      "id": 27,
+      "name": "Printed Circuit Board",
+      "img": "img/Circuit_Icon.png"
+    },
+    {
+      "id": 28,
+      "name": "Broken GPhone",
+      "img": "img/Broken_GPhone_Icon.png"
+    },
+    {
+      "id": 29,
+      "name": "Powercord",
+      "img": "img/Powercord_icon.png"
+    },
+    {
+      "id": 30,
+      "name": "T-Shaped Plug",
+      "img": "img/T-Shaped_Plug_Icon.png"
+    },
+    {
+      "id": 31,
+      "name": "Malboro Cigarettes",
+      "img": "img/Malboro_Cigarettes_Icon.png"
+    },
+    {
+      "id": 32,
+      "name": "Strike Cigarettes",
+      "img": "img/Cigred.png"
+    },
+    {
+      "id": 33,
+      "name": "Wilston Cigarettes",
+      "img": "img/Wilstonicon.png"
+    },
+    {
+      "id": 34,
+      "name": "Graphics Card",
+      "img": "img/Graphics_Card_icon.png"
+    },
+    {
+      "id": 35,
+      "name": "CPU Fan",
+      "img": "img/CPU_Fan_Icon.png"
+    }
+  ],
+  "quests": [
+    [
+      {
+        "id": 1,
+        "questName": "Debut",
+        "questGiver": "Prapor",
+        "completed": false,
+        "level": 1,
+        "items": {
+          "2": 2
+        }
+      },
+      {
+        "id": 2,
+        "questName": "Shortage",
+        "questGiver": "Therapist",
+        "completed": false,
+        "level": 1,
+        "items": {
+          "1": 3
+        }
+      },
+      {
+        "id": 3,
+        "questName": "Acquintance",
+        "questGiver": "Jaeger",
+        "completed": false,
+        "level": 1,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 4,
+        "questName": "Sanitary Standards pt1",
+        "questGiver": "Therapist",
+        "completed": false,
+        "level": 4,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 5,
+        "questName": "Supplier",
+        "questGiver": "Skier",
+        "completed": false,
+        "level": 5,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 6,
+        "questName": "Ice Cream Cones",
+        "questGiver": "Prapor",
+        "completed": false,
+        "level": 9,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 7,
+        "questName": "What's on the flash drive?",
+        "questGiver": "Skier",
+        "completed": false,
+        "level": 8,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 8,
+        "questName": "Sanitary Standards pt2",
+        "questGiver": "Therapist",
+        "completed": false,
+        "level": 8,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 9,
+        "questName": "Painkiller",
+        "questGiver": "Therapist",
+        "completed": false,
+        "level": 8,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 10,
+        "questName": "Car Repair",
+        "questGiver": "Therapist",
+        "completed": false,
+        "level": 10,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 11,
+        "questName": "General Wares",
+        "questGiver": "Therapist",
+        "completed": false,
+        "level": 12,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 12,
+        "questName": "Humanitarian Supplies",
+        "questGiver": "Peacekeeper",
+        "completed": false,
+        "level": 11,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 13,
+        "questName": "The Punisher - Part 2",
+        "questGiver": "Prapov",
+        "completed": false,
+        "level": 17,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 14,
+        "questName": "Dressed to kill",
+        "questGiver": "Ragman",
+        "completed": false,
+        "level": 15,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 15,
+        "questName": "The Punisher - Part 4",
+        "questGiver": "Prapor",
+        "completed": false,
+        "level": 20,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 16,
+        "questName": "Friend from the West - Part 1",
+        "questGiver": "Skier",
+        "completed": false,
+        "level": 9,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 17,
+        "questName": "Spa Tour - Part 3",
+        "questGiver": "Skier",
+        "completed": false,
+        "level": 12,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 18,
+        "questName": "Signal - Part 2",
+        "questGiver": "Mechanic",
+        "completed": false,
+        "level": 12,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 19,
+        "questName": "Farming - Part 2",
+        "questGiver": "Mechanic",
+        "completed": false,
+        "level": 12,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 20,
+        "questName": "Bad Habit",
+        "questGiver": "Mechanic",
+        "completed": false,
+        "level": 12,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      },
+      {
+        "id": 21,
+        "questName": "Farming - Part 4",
+        "questGiver": "Mechanic",
+        "completed": false,
+        "level": 14,
+        "items": {
+          "3": 3,
+          "4": 2,
+          "5": 2
+        }
+      }
+    ]
+  ]
+}
