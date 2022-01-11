@@ -18,14 +18,13 @@ function App() {
         quest.id === id ? { ...quest, completed: !quest.completed } : quest
       )
     );
-    test();
   };
 
   const getIncompleteQuests = () => {
     const activeQuests = [];
     quests.forEach((el) => {
       if (!el.completed) {
-        activeQuests.push(el.id);
+        activeQuests.push(el);
       }
     });
     return activeQuests;
