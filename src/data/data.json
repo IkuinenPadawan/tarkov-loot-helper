@@ -191,7 +191,7 @@
       "questGiver": "Therapist",
       "completed": false,
       "level": 1,
-      "items": [{ "id": 2, "amount": 3 }]
+      "items": [{ "id": 1, "amount": 3 }]
     },
     {
       "id": 3,
@@ -211,11 +211,7 @@
       "questGiver": "Therapist",
       "completed": false,
       "level": 4,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 6, "amount": 1 }]
     },
     {
       "id": 5,
@@ -224,9 +220,8 @@
       "completed": false,
       "level": 5,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 7, "amount": 1 },
+        { "id": 8, "amount": 1 }
       ]
     },
     {
@@ -235,11 +230,7 @@
       "questGiver": "Prapor",
       "completed": false,
       "level": 9,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 9, "amount": 3 }]
     },
     {
       "id": 7,
@@ -247,11 +238,7 @@
       "questGiver": "Skier",
       "completed": false,
       "level": 8,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 10, "amount": 2 }]
     },
     {
       "id": 8,
@@ -259,11 +246,7 @@
       "questGiver": "Therapist",
       "completed": false,
       "level": 8,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 6, "amount": 2 }]
     },
     {
       "id": 9,
@@ -271,11 +254,7 @@
       "questGiver": "Therapist",
       "completed": false,
       "level": 8,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 11, "amount": 4 }]
     },
     {
       "id": 10,
@@ -284,9 +263,8 @@
       "completed": false,
       "level": 10,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 12, "amount": 4 },
+        { "id": 13, "amount": 8 }
       ]
     },
     {
@@ -295,11 +273,7 @@
       "questGiver": "Therapist",
       "completed": false,
       "level": 12,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 14, "amount": 15 }]
     },
     {
       "id": 12,
@@ -307,11 +281,7 @@
       "questGiver": "Peacekeeper",
       "completed": false,
       "level": 11,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 15, "amount": 5 }]
     },
     {
       "id": 13,
@@ -319,11 +289,7 @@
       "questGiver": "Prapov",
       "completed": false,
       "level": 17,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 16, "amount": 7 }]
     },
     {
       "id": 14,
@@ -332,9 +298,8 @@
       "completed": false,
       "level": 15,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 17, "amount": 2 },
+        { "id": 18, "amount": 2 }
       ]
     },
     {
@@ -343,11 +308,7 @@
       "questGiver": "Prapor",
       "completed": false,
       "level": 20,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 19, "amount": 5 }]
     },
     {
       "id": 16,
@@ -355,11 +316,7 @@
       "questGiver": "Skier",
       "completed": false,
       "level": 9,
-      "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
-      ]
+      "items": [{ "id": 20, "amount": 7 }]
     },
     {
       "id": 17,
@@ -368,9 +325,10 @@
       "completed": false,
       "level": 12,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 21, "amount": 1 },
+        { "id": 22, "amount": 2 },
+        { "id": 23, "amount": 2 },
+        { "id": 24, "amount": 2 }
       ]
     },
     {
@@ -380,9 +338,10 @@
       "completed": false,
       "level": 12,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 25, "amount": 3 },
+        { "id": 26, "amount": 3 },
+        { "id": 27, "amount": 3 },
+        { "id": 28, "amount": 3 }
       ]
     },
     {
@@ -392,9 +351,9 @@
       "completed": false,
       "level": 12,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 29, "amount": 2 },
+        { "id": 30, "amount": 4 },
+        { "id": 27, "amount": 2 }
       ]
     },
     {
@@ -404,9 +363,9 @@
       "completed": false,
       "level": 12,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 31, "amount": 5 },
+        { "id": 32, "amount": 5 },
+        { "id": 33, "amount": 5 }
       ]
     },
     {
@@ -416,9 +375,8 @@
       "completed": false,
       "level": 14,
       "items": [
-        { "id": 3, "amount": 3 },
-        { "id": 4, "amount": 2 },
-        { "id": 5, "amount": 2 }
+        { "id": 34, "amount": 3 },
+        { "id": 35, "amount": 8 }
       ]
     }
   ]
