@@ -29,6 +29,7 @@ const ItemList = ({ items, activeQuests }) => {
             questName: quests.questName,
             questGiver: quests.questGiver,
             amount: item.amount,
+            completed: quests.completed,
           };
           questList.push(quest);
         }

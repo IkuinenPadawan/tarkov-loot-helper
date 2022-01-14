@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Item = ({ name, img, relatedQuests }) => {
-  // console.log(relatedQuests);
+  console.log(relatedQuests);
   return (
     <li className='item'>
       <p className='item-name'>{name}</p>
