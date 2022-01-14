@@ -14,7 +14,8 @@ code {
     monospace;
 }
 
-.quest-list, .item-list {
+.quest-list,
+.item-list {
   width: 30%;
   margin: 0 auto;
   list-style: none;
@@ -39,12 +40,17 @@ code {
   align-items: center;
 }
 
-.amount {
-  font-weight: bold;
-  padding-right: 0.5rem;
+.item {
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
 }
 
 .item-name {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.item-quest-list {
+  display: flex;
+  justify-content: space-between;
 }
