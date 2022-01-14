@@ -5,8 +5,10 @@ const ItemList = ({ items, activeQuests }) => {
   // console.log(activeQuests);
   const questItems = [];
   for (let quests of activeQuests) {
-    for (let item of quests.items) {
-      questItems.push(item);
+    if (!quests.completed) {
+      for (let item of quests.items) {
+        questItems.push(item);
+      }
     }
   }
   // console.log(questItems);
@@ -23,7 +25,7 @@ const ItemList = ({ items, activeQuests }) => {
   const getRelatedQuests = (el) => {
     const questList = [];
     for (let quests of activeQuests) {
-      console.log(quests);
+      // console.log(quests);
       for (let item of quests.items) {
         if (el.id === item.id) {
           const quest = {
