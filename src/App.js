@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './App.css';
 import Header from './components/Header';
@@ -12,22 +12,31 @@ function App() {
   const [items, setItems] = useState(data.items);
   const [quests, setQuests] = useState(data.quests);
 
-  const checkQuests = (id) => {
-    setQuests(
-      quests.map((quest) =>
-        quest.id === id ? { ...quest, completed: !quest.completed } : quest
-      )
-    );
-  };
+  // Fetch quests from local storage if exists
+  useEffect(() => {
+    const json = localStorage.getItem('quests');
+    const savedQuests = JSON.parse(json);
+    if (savedQuests) {
+      setQuests(savedQuests);
+    }
+    console.log('Fetch from storage');
+  }, []);
 
-  const getIncompleteQuests = () => {
-    const activeQuests = [];
-    quests.forEach((el) => {
-      if (!el.completed) {
-        activeQuests.push(el);
-      }
-    });
-    return activeQuests;
+  // Save quests to local storage when quests modified
+  useEffect(() => {
+    const json = JSON.stringify(quests);
+    localStorage.setItem('quests', json);
+    console.log('Saved to storage');
+  }, [quests]);
+
+  // Handle user clicking quests complete
+  const checkQuests = (id) => {
+    let data = [];
+    data.push(...quests);
+    const newData = data.map((quest) =>
+      quest.id === id ? { ...quest, completed: !quest.completed } : quest
+    );
+    setQuests(newData);
   };
 
   const handleLevelChange = (level) => {
@@ -39,11 +48,7 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <ItemList
-        items={items}
-        activeQuests={getIncompleteQuests()}
-        level={level}
-      />
+      <ItemList items={items} activeQuests={quests} level={level} />
     </div>
   );
 }

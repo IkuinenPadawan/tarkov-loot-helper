@@ -1,7 +1,7 @@
 import React from 'react';
 
 const QuestPicker = ({ quests, checkQuests }) => {
-  console.log(quests);
+  // console.log(quests);
   const handleChange = (e) => {
     checkQuests(parseInt(e.target.id));
   };
@@ -18,6 +18,7 @@ const QuestPicker = ({ quests, checkQuests }) => {
                 name={quest.questName}
                 value={quest.questName}
                 onChange={handleChange}
+                checked={quest.completed ? true : false}
               />
               <label htmlFor={quest.questName}>
                 {quest.questName} - {quest.questGiver}{' '}
