@@ -2,7 +2,7 @@ import React from 'react';
 import Item from './Item';
 
 const ItemList = ({ items, activeQuests }) => {
-  console.log(activeQuests);
+  // console.log(activeQuests);
   const questItems = [];
   for (let quests of activeQuests) {
     for (let item of quests.items) {
@@ -11,7 +11,7 @@ const ItemList = ({ items, activeQuests }) => {
   }
   // console.log(questItems);
 
-  const test = (el) => {
+  const itemNeeded = (el) => {
     for (let item of questItems) {
       if (item.id === el.id) {
         return true;
@@ -20,12 +20,35 @@ const ItemList = ({ items, activeQuests }) => {
     return false;
   };
 
+  const getRelatedQuests = (el) => {
+    const questList = [];
+    for (let quests of activeQuests) {
+      console.log(quests);
+      for (let item of quests.items) {
+        if (el.id === item.id) {
+          const quest = {
+            questName: quests.questName,
+            questGiver: quests.questGiver,
+            amount: item.amount,
+          };
+          questList.push(quest);
+        }
+      }
+    }
+    return questList;
+  };
+
   return (
     <div>
       <ul className='item-list'>
         {items.map((item) => {
-          return test(item) ? (
-            <Item key={item.id} name={item.name} img={item.img} />
+          return itemNeeded(item) ? (
+            <Item
+              key={item.id}
+              name={item.name}
+              img={item.img}
+              relatedQuests={getRelatedQuests(item)}
+            />
           ) : (
             ''
           );
