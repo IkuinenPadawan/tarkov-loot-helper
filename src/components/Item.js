@@ -10,12 +10,10 @@ const Item = ({ name, img, relatedQuests }) => {
       </div>
       <h4>Quests</h4>
       {relatedQuests.map((quest) => (
-        <div>
-          <p>{quest.questName}</p>
+        <div className='item-quest-list'>
           <p>{quest.questGiver}</p>
-          <p>{quest.amount}</p>
-          <p></p>
-          <p></p>
+          <p>{quest.questName}</p>
+          <p>x{quest.amount}</p>
         </div>
       ))}
     </li>
