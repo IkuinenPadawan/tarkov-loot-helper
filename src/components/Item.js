@@ -9,13 +9,17 @@ const Item = ({ name, img, relatedQuests }) => {
         <img src={img} alt='' />
       </div>
       <h4>Quests</h4>
-      {relatedQuests.map((quest) => (
-        <div className='item-quest-list'>
-          <p>{quest.questGiver}</p>
-          <p>{quest.questName}</p>
-          <p>x{quest.amount}</p>
-        </div>
-      ))}
+      {relatedQuests.map((quest) =>
+        quest.completed ? (
+          ''
+        ) : (
+          <div className='item-quest-list'>
+            <p>{quest.questGiver}</p>
+            <p>{quest.questName}</p>
+            <p>x{quest.amount}</p>
+          </div>
+        )
+      )}
     </li>
   );
 };
