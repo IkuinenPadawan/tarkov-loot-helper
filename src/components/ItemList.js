@@ -2,7 +2,6 @@ import React from 'react';
 import Item from './Item';
 
 const ItemList = ({ items, activeQuests }) => {
-  // console.log(activeQuests);
   const questItems = [];
   for (let quests of activeQuests) {
     if (!quests.completed) {
@@ -11,7 +10,6 @@ const ItemList = ({ items, activeQuests }) => {
       }
     }
   }
-  // console.log(questItems);
 
   const itemNeeded = (el) => {
     for (let item of questItems) {
@@ -25,7 +23,6 @@ const ItemList = ({ items, activeQuests }) => {
   const getRelatedQuests = (el) => {
     const questList = [];
     for (let quests of activeQuests) {
-      // console.log(quests);
       for (let item of quests.items) {
         if (el.id === item.id) {
           const quest = {

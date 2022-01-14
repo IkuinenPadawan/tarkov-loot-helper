@@ -30,28 +30,11 @@ function App() {
   const checkQuests = (id) => {
     let data = [];
     data.push(...quests);
-    // console.log(data);
     const newData = data.map((quest) =>
       quest.id === id ? { ...quest, completed: !quest.completed } : quest
     );
-    console.log(newData);
     setQuests(newData);
-    // setQuests(
-    //   quests.map((quest) =>
-    //     quest.id === id ? { ...quest, completed: !quest.completed } : quest
-    //   )
-    // );
   };
-
-  // const getIncompleteQuests = () => {
-  //   const activeQuests = [];
-  //   quests.forEach((el) => {
-  //     if (!el.completed) {
-  //       activeQuests.push(el);
-  //     }
-  //   });
-  //   return activeQuests;
-  // };
 
   const handleLevelChange = (level) => {
     setLevel(level);
