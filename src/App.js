@@ -12,6 +12,7 @@ function App() {
   const [items, setItems] = useState(data.items);
   const [quests, setQuests] = useState(data.quests);
 
+  // Fetch quests from local storage if exists
   useEffect(() => {
     const json = localStorage.getItem('quests');
     const savedQuests = JSON.parse(json);
@@ -21,12 +22,14 @@ function App() {
     console.log('Fetch from storage');
   }, []);
 
+  // Save quests to local storage when quests modified
   useEffect(() => {
     const json = JSON.stringify(quests);
     localStorage.setItem('quests', json);
     console.log('Saved to storage');
   }, [quests]);
 
+  // Handle user clicking quests complete
   const checkQuests = (id) => {
     let data = [];
     data.push(...quests);
