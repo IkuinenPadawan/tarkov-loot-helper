@@ -47,8 +47,9 @@ function App() {
   };
 
   const handleSearch = (val) => {
+    console.log('App value ' + val);
     setSearchWord(val);
-    console.log(val);
+    console.log('App value after set searchWord' + val);
     if (searchWord !== '') {
       console.log('IN');
       const filteredItems = items.filter((item) => {
@@ -58,6 +59,7 @@ function App() {
           .includes(searchWord.toLowerCase());
       });
       setSearchResults(filteredItems);
+      console.log('searchWord = ' + searchWord);
     } else {
       setSearchResults(items);
     }
@@ -68,7 +70,12 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <SearchBar value={searchWord} handleSearch={handleSearch} />
+      <SearchBar
+        value={searchWord}
+        handleSearch={handleSearch}
+        items={items}
+        searchResults={searchResults}
+      />
       <ItemList
         items={searchWord.length < 1 ? items : searchResults}
         activeQuests={quests}
