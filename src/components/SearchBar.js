@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchBar = ({ handleSearch, value, searchResults, clicked }) => {
+const SearchBar = ({ handleSearch, value, searchResults }) => {
   const handleChange = (val) => {
     console.log('SearchBar val' + val);
     handleSearch(val);
