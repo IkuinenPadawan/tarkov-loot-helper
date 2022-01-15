@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Search = (props) => {
-  const [value, setValue] = useState('');
-
+const Search = ({ handleSearch, value }) => {
   const handleChange = (e) => {
-    setValue(e.target.value);
+    handleSearch(e.target.value);
   };
   return (
     <div className='search'>

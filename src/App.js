@@ -12,6 +12,7 @@ function App() {
   const [level, setLevel] = useState(1);
   const [items, setItems] = useState(data.items);
   const [quests, setQuests] = useState(data.quests);
+  const [searchWord, setSearchWord] = useState('');
 
   // Fetch quests from local storage if exists
   useEffect(() => {
@@ -44,13 +45,22 @@ function App() {
     setLevel(level);
   };
 
+  const handleSearch = (val) => {
+    setSearchWord(val);
+  };
+
   return (
     <div className='App'>
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <Search />
-      <ItemList items={items} activeQuests={quests} level={level} />
+      <Search value={searchWord} handleSearch={handleSearch} />
+      <ItemList
+        items={items}
+        activeQuests={quests}
+        level={level}
+        searchWord={searchWord}
+      />
     </div>
   );
 }
