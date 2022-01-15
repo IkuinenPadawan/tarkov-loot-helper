@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Search = ({ handleSearch, value }) => {
+const SearchBar = ({ handleSearch, value }) => {
   const handleChange = (e) => {
     handleSearch(e.target.value);
   };
@@ -12,4 +12,4 @@ const Search = ({ handleSearch, value }) => {
   );
 };
 
-export default Search;
+export default SearchBar;
