@@ -13,6 +13,7 @@ function App() {
   const [items, setItems] = useState(data.items);
   const [quests, setQuests] = useState(data.quests);
   const [searchWord, setSearchWord] = useState('');
+  const [searchResults, setSearchResults] = useState();
 
   // Fetch quests from local storage if exists
   useEffect(() => {
@@ -47,6 +48,19 @@ function App() {
 
   const handleSearch = (val) => {
     setSearchWord(val);
+    console.log(val);
+    if (searchWord !== '') {
+      console.log('IN');
+      const filteredItems = items.filter((item) => {
+        return Object.values(item)
+          .join(' ')
+          .toLowerCase()
+          .includes(searchWord.toLowerCase());
+      });
+      setSearchResults(filteredItems);
+    } else {
+      setSearchResults(items);
+    }
   };
 
   return (
@@ -56,7 +70,7 @@ function App() {
       <QuestList quests={quests} checkQuests={checkQuests} />
       <Search value={searchWord} handleSearch={handleSearch} />
       <ItemList
-        items={items}
+        items={searchWord.length < 1 ? items : searchResults}
         activeQuests={quests}
         level={level}
         searchWord={searchWord}
