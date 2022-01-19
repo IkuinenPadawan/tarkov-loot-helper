@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from './Item';
 
-const ItemList = ({ items, activeQuests }) => {
+const ItemList = ({ items, activeQuests, searchWord }) => {
   const questItems = [];
   for (let quests of activeQuests) {
     if (!quests.completed) {

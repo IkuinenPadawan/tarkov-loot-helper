@@ -5,12 +5,15 @@ import Header from './components/Header';
 import ItemList from './components/ItemList';
 import LevelPicker from './components/LevelPicker';
 import QuestList from './components/QuestList';
+import SearchBar from './components/SearchBar';
 import data from './data/data.json';
 
 function App() {
   const [level, setLevel] = useState(1);
   const [items, setItems] = useState(data.items);
   const [quests, setQuests] = useState(data.quests);
+  const [searchWord, setSearchWord] = useState('');
+  const [searchResults, setSearchResults] = useState();
 
   // Fetch quests from local storage if exists
   useEffect(() => {
@@ -43,12 +46,41 @@ function App() {
     setLevel(level);
   };
 
+  const handleSearch = (val) => {
+    setSearchWord(val, doFilter(val));
+  };
+
+  const doFilter = (val) => {
+    if (searchWord !== '') {
+      const filteredItems = items.filter((item) => {
+        return Object.values(item)
+          .join(' ')
+          .toLowerCase()
+          .includes(val.toLowerCase());
+      });
+      setSearchResults(filteredItems);
+    } else {
+      setSearchResults(items);
+    }
+  };
+
   return (
     <div className='App'>
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <ItemList items={items} activeQuests={quests} level={level} />
+      <SearchBar
+        value={searchWord}
+        handleSearch={handleSearch}
+        items={items}
+        searchResults={searchResults}
+      />
+      <ItemList
+        items={searchWord.length < 1 ? items : searchResults}
+        activeQuests={quests}
+        level={level}
+        searchWord={searchWord}
+      />
     </div>
   );
 }
