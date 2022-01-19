@@ -5,9 +5,9 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
   const wrapperRef = useRef(null);
 
   useEffect(() => {
-    document.addEventListener('mousedown', dropToggle);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', dropToggle);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   });
 
@@ -20,7 +20,7 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
     setVisible(false);
   };
 
-  const dropToggle = (e) => {
+  const handleClickOutside = (e) => {
     if (
       wrapperRef.current &&
       visible &&
