@@ -17,7 +17,7 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
       <label>Search</label>
       <input
         value={value}
-        onClick={() => setVisible(!visible)}
+        onClick={() => setVisible(true)}
         onChange={(e) => handleChange(e.target.value)}
       />
       <div className='dropdown'>
