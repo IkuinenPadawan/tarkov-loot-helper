@@ -47,14 +47,11 @@ function App() {
   };
 
   const handleSearch = (val) => {
-    console.log('App value ' + searchWord);
     setSearchWord(val, doFilter(val));
   };
 
   const doFilter = (val) => {
-    console.log('App value after set searchWord ' + searchWord);
     if (searchWord !== '') {
-      console.log('IN');
       const filteredItems = items.filter((item) => {
         return Object.values(item)
           .join(' ')
@@ -62,7 +59,6 @@ function App() {
           .includes(val.toLowerCase());
       });
       setSearchResults(filteredItems);
-      console.log('searchWord after filter = ' + searchWord);
     } else {
       setSearchResults(items);
     }
