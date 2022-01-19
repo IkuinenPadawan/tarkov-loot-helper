@@ -15,7 +15,7 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
     handleSearch(val);
   };
 
-  const handleClick = (val) => {
+  const handleSelect = (val) => {
     handleSearch(val);
     setVisible(false);
   };
@@ -44,7 +44,7 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
               return (
                 <div
                   className='dropdown-item'
-                  onClick={() => handleClick(item.name)}
+                  onClick={() => handleSelect(item.name)}
                 >
                   {item.name}
                 </div>
