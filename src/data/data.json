@@ -174,6 +174,226 @@
       "id": 35,
       "name": "CPU Fan",
       "img": "img/CPU_Fan_Icon.png"
+    },
+    {
+      "id": 36,
+      "name": "Duct tape",
+      "img": "img/Duct_tape_Icon.png"
+    },
+    {
+      "id": 37,
+      "name": "Screw nuts",
+      "img": "img/Screwnuticon.png"
+    },
+    {
+      "id": 38,
+      "name": "Bolts",
+      "img": "img/Boltsicon.png"
+    },
+    {
+      "id": 39,
+      "name": "Construction measuring tape",
+      "img": "img/Construction_Measuring_Tape_Icon.png"
+    },
+    {
+      "id": 40,
+      "name": "Phase control relay",
+      "img": "img/Relay_icon.png"
+    },
+    {
+      "id": 41,
+      "name": "Disposable syringe",
+      "img": "img/DisposableSyringeIcon.png"
+    },
+    {
+      "id": 42,
+      "name": "Pile of meds",
+      "img": "img/Pile_of_meds_icon.png"
+    },
+    {
+      "id": 43,
+      "name": "Aseptic bandage",
+      "img": "img/Aseptic-Bandage_Icon.png"
+    },
+    {
+      "id": 44,
+      "name": "Leatherman Multitool",
+      "img": "img/Multitoolicon.png"
+    },
+    {
+      "id": 45,
+      "name": "Metal spare parts",
+      "img": "img/M-parts-icon.png"
+    },
+    {
+      "id": 46,
+      "name": "Pack of screws",
+      "img": "img/Screwsicon.png"
+    },
+    {
+      "id": 47,
+      "name": "Pack of nails",
+      "img": "img/Nailsicon.png"
+    },
+    {
+      "id": 48,
+      "name": "Toilet paper",
+      "img": "img/Toilet_paper_icon.png"
+    },
+    {
+      "id": 49,
+      "name": "Toothpaste",
+      "img": "img/Toothpasteicon.png"
+    },
+    {
+      "id": 50,
+      "name": "Soap",
+      "img": "img/Soap_icon.png"
+    },
+    {
+      "id": 51,
+      "name": "Crickent lighter",
+      "img": "img/Cricket_lighter_Icon.png"
+    },
+    {
+      "id": 52,
+      "name": "Classic matches",
+      "img": "img/Matches_Icon.png"
+    },
+    {
+      "id": 53,
+      "name": "Gas mask air filter",
+      "img": "img/Airfiltericon.png"
+    },
+    {
+      "id": 54,
+      "name": "Military power filter",
+      "img": "img/Mil_Filter_Icon.png"
+    },
+    {
+      "id": 55,
+      "name": "Military corrugated tube",
+      "img": "img/Military_corrugated_tube_Icon.png"
+    },
+    {
+      "id": 56,
+      "name": "Phased array element",
+      "img": "img/Phased-Array-Element-icon.png"
+    },
+    {
+      "id": 57,
+      "name": "Working LCD",
+      "img": "img/Working_LCD_Icon.png"
+    },
+    {
+      "id": 58,
+      "name": "Military cable",
+      "img": "img/MilitaryCableIcon.png"
+    },
+    {
+      "id": 58,
+      "name": "Military power filter",
+      "img": "img/Mil_Filter_Icon.png"
+    },
+    {
+      "id": 59,
+      "name": "VPX Flash Storage Module",
+      "img": "img/VPXFlashIcon.png"
+    },
+    {
+      "id": 60,
+      "name": "Power supply unit",
+      "img": "img/Psuicon.png"
+    },
+    {
+      "id": 61,
+      "name": "Pressure gauge",
+      "img": "img/Pressure_gauge_icon.png"
+    },
+    {
+      "id": 62,
+      "name": "Radiator helix",
+      "img": "img/RadiatorHelixIcon.png"
+    },
+    {
+      "id": 63,
+      "name": "Silicone tube",
+      "img": "img/SiliconeTubeIcon.png"
+    },
+    {
+      "id": 64,
+      "name": "Pipe grip wrench",
+      "img": "img/Pgw_small.png"
+    },
+    {
+      "id": 65,
+      "name": "Analog thermometer",
+      "img": "img/Analog_Thermometer_Icon.png"
+    },
+    {
+      "id": 66,
+      "name": "Factory plan map",
+      "img": "img/Factory_Map_Icon.png"
+    },
+    {
+      "id": 66,
+      "name": "Folder with intelligence",
+      "img": "img/FolderWithIntelligence_Icon.png"
+    },
+    {
+      "id": 67,
+      "name": "Diary",
+      "img": "img/Diary_Icon1.png"
+    },
+    {
+      "id": 68,
+      "name": "Slim diary",
+      "img": "img/SlimDiaryIcon.png"
+    },
+    {
+      "id": 69,
+      "name": "Tech manual",
+      "img": "img/Lada_manual_icon.png"
+    },
+    {
+      "id": 70,
+      "name": "Chainlet",
+      "img": "img/Chainlet_icon.png"
+    },
+    {
+      "id": 71,
+      "name": "Horse figurine",
+      "img": "img/Horse_figurine_Icon.png"
+    },
+    {
+      "id": 72,
+      "name": "Lucky Scav Junk box",
+      "img": "img/Junkbox.png"
+    },
+    {
+      "id": 73,
+      "name": "'Fierce Hatchling' moonshine",
+      "img": "img/Fiece_hatchling_moonshine_icon.png"
+    },
+    {
+      "id": 74,
+      "name": "Roler Submariner gold wrist watch",
+      "img": "img/Roler_icon.png"
+    },
+    {
+      "id": 75,
+      "name": "Golden neck chain",
+      "img": "img/Golden_neck_chain_Icon.png"
+    },
+    {
+      "id": 76,
+      "name": "Gold skull ring",
+      "img": "img/SkullRing_Icon.png"
+    },
+    {
+      "id": 77,
+      "name": "Bronze lion",
+      "img": "img/Bronze_Lion_Icon.png"
     }
   ],
   "quests": [
