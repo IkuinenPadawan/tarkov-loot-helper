@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const SearchBar = ({ handleSearch, value, searchResults }) => {
   const [visible, setVisible] = useState(false);
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    document.addEventListener('mousedown', dropToggle);
+    return () => {
+      document.removeEventListener('mousedown', dropToggle);
+    };
+  });
 
   const handleChange = (val) => {
-    console.log('SearchBar val' + val);
     handleSearch(val);
   };
 
@@ -12,6 +19,17 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
     handleSearch(val);
     setVisible(false);
   };
+
+  const dropToggle = (e) => {
+    if (
+      wrapperRef.current &&
+      visible &&
+      !wrapperRef.current.contains(e.target)
+    ) {
+      setVisible(false);
+    }
+  };
+
   return (
     <div className='search'>
       <label>Search</label>
@@ -20,7 +38,7 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
         onClick={() => setVisible(true)}
         onChange={(e) => handleChange(e.target.value)}
       />
-      <div className='dropdown'>
+      <div className='dropdown' ref={wrapperRef}>
         {value !== '' && visible
           ? searchResults.map((item, key) => {
               return (
