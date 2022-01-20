@@ -21,8 +21,13 @@ function App() {
   useEffect(() => {
     const json = localStorage.getItem('quests');
     const savedQuests = JSON.parse(json);
+    const hideoutJson = localStorage.getItem('upgrades');
+    const savedUpgrades = JSON.parse(hideoutJson);
     if (savedQuests) {
       setQuests(savedQuests);
+    }
+    if (savedUpgrades) {
+      setHideoutModules(savedUpgrades);
     }
     console.log('Fetch from storage');
   }, []);
@@ -30,9 +35,11 @@ function App() {
   // Save quests to local storage when quests modified
   useEffect(() => {
     const json = JSON.stringify(quests);
+    const hideoutJson = JSON.stringify(hideoutModules);
     localStorage.setItem('quests', json);
+    localStorage.setItem('upgrades', hideoutJson);
     console.log('Saved to storage');
-  }, [quests]);
+  }, [quests, hideoutModules]);
 
   // Handle user clicking quests complete
   const checkQuests = (id) => {
