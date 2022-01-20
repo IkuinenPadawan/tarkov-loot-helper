@@ -3,7 +3,7 @@ import HideoutUpgradePicker from './HideoutUpgradePicker';
 
 const UpgradeList = ({ upgrades, checkUpgrades }) => {
   return (
-    <div>
+    <div className='upgrades-list'>
       <h4>Level 1 Hideout upgrades completed</h4>
       <HideoutUpgradePicker upgrades={upgrades} checkUpgrades={checkUpgrades} />
     </div>
