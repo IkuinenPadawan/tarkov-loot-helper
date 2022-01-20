@@ -5,6 +5,7 @@ import Header from './components/Header';
 import ItemList from './components/ItemList';
 import LevelPicker from './components/LevelPicker';
 import QuestList from './components/QuestList';
+import UpgradeList from './components/UpgradeList';
 import SearchBar from './components/SearchBar';
 import data from './data/data.json';
 
@@ -70,6 +71,7 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
+      <UpgradeList upgrades={hideoutModules} />
       <SearchBar
         value={searchWord}
         handleSearch={handleSearch}

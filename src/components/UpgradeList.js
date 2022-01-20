@@ -1,11 +1,11 @@
 import React from 'react';
-import HideoutUpgradePicker from './HideoutUpgradepicker';
+import HideoutUpgradePicker from './HideoutUpgradePicker';
 
-const UpgradeList = (props) => {
+const UpgradeList = ({ upgrades }) => {
   return (
     <div>
       <h4>Hideout upgrades completed</h4>
-      <HideoutUpgradePicker />
+      <HideoutUpgradePicker upgrades={upgrades} />
     </div>
   );
 };
