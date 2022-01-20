@@ -97,6 +97,7 @@ function App() {
       <ItemList
         items={searchWord.length < 1 ? items : searchResults}
         activeQuests={quests}
+        hideoutModules={hideoutModules}
         level={level}
         searchWord={searchWord}
       />

@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Item = ({ name, img, relatedQuests }) => {
-  // console.log(relatedQuests);
+const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
+  console.log(relatedQuests);
+  console.log(relatedUpgrades);
   return (
     <li className='item'>
       <p className='item-name'>{name}</p>
@@ -17,6 +18,17 @@ const Item = ({ name, img, relatedQuests }) => {
             <p>{quest.questGiver}</p>
             <p>{quest.questName}</p>
             <p>x{quest.amount}</p>
+          </div>
+        )
+      )}
+      <h4>Hideout upgrades</h4>
+      {relatedUpgrades.map((upgrade) =>
+        upgrade.completed ? (
+          ''
+        ) : (
+          <div className='item-quest-list'>
+            <p>{upgrade.moduleName}</p>
+            <p>x{upgrade.amount}</p>
           </div>
         )
       )}
