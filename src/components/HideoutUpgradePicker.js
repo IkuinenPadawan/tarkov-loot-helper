@@ -1,6 +1,10 @@
 import React from 'react';
 
-const HideoutUpgradePicker = ({ upgrades }) => {
+const HideoutUpgradePicker = ({ upgrades, checkUpgrades }) => {
+  console.log(upgrades);
+  const handleChange = (e) => {
+    checkUpgrades(parseInt(e.target.id));
+  };
   return (
     <div>
       <ul className='quest-list'>
@@ -12,7 +16,8 @@ const HideoutUpgradePicker = ({ upgrades }) => {
                 id={module.id}
                 name={module.moduleName}
                 value={module.moduleName}
-                checked={module.completed ? true : false}
+                onChange={handleChange}
+                checked={module.moduleLevels.levelOne.completed ? true : false}
               />
               <label htmlFor={module.moduleName}>
                 {module.moduleName} - 'level1'{' '}

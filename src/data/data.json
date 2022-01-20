@@ -604,8 +604,8 @@
     {
       "id": 1,
       "moduleName": "Air Filtering Unit",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 53, "amount": 5 },
@@ -618,8 +618,8 @@
     {
       "id": 2,
       "moduleName": "Bitcoin Farm",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 30, "amount": 5 },
@@ -634,8 +634,8 @@
     {
       "id": 3,
       "moduleName": "Booze Generator",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 45, "amount": 2 },
@@ -652,8 +652,8 @@
     {
       "id": 4,
       "moduleName": "Generator",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [{ "id": 13, "amount": 1 }]
         }
@@ -662,8 +662,8 @@
     {
       "id": 5,
       "moduleName": "Heating",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [{ "id": 52, "amount": 2 }]
         }
@@ -672,8 +672,8 @@
     {
       "id": 6,
       "moduleName": "Illumination",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [{ "id": 51, "amount": 1 }]
         }
@@ -682,8 +682,8 @@
     {
       "id": 7,
       "moduleName": "Intelligence Center",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 67, "amount": 1 },
@@ -696,8 +696,8 @@
     {
       "id": 8,
       "moduleName": "Lavatory",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 48, "amount": 1 },
@@ -710,8 +710,8 @@
     {
       "id": 9,
       "moduleName": "Library",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 70, "amount": 2 },
@@ -726,8 +726,8 @@
     {
       "id": 10,
       "moduleName": "Medstation",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 41, "amount": 1 },
@@ -740,8 +740,8 @@
     {
       "id": 11,
       "moduleName": "Nutrition Unit",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 29, "amount": 1 },
@@ -753,8 +753,8 @@
     {
       "id": 12,
       "moduleName": "Rest Space",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 36, "amount": 1 },
@@ -766,8 +766,8 @@
     {
       "id": 13,
       "moduleName": "Security",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [{ "id": 39, "amount": 1 }]
         }
@@ -776,8 +776,8 @@
     {
       "id": 14,
       "moduleName": "Shooting Range",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 45, "amount": 2 },
@@ -793,8 +793,8 @@
     {
       "id": 15,
       "moduleName": "Solar Power",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 56, "amount": 4 },
@@ -808,8 +808,8 @@
     {
       "id": 16,
       "moduleName": "Water Collector",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 36, "amount": 3 },
@@ -823,8 +823,8 @@
     {
       "id": 17,
       "moduleName": "Workbench",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 37, "amount": 2 },
@@ -837,8 +837,8 @@
     {
       "id": 18,
       "moduleName": "Scav Case",
-      "levels": {
-        "level1": {
+      "moduleLevels": {
+        "levelOne": {
           "completed": false,
           "items": [
             { "id": 74, "amount": 1 },

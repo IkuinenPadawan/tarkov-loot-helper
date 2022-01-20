@@ -44,6 +44,22 @@ function App() {
     setQuests(newData);
   };
 
+  // Handle user clicking hideout upgrades complete
+  const checkUpgrades = (id) => {
+    console.log(id);
+    let data = [];
+    data.push(...hideoutModules);
+    const newData = data.map((module) => {
+      let obj = { ...module };
+      if (module.id === id) {
+        obj.moduleLevels.levelOne.completed =
+          !obj.moduleLevels.levelOne.completed;
+      }
+      return obj;
+    });
+    setHideoutModules(newData);
+  };
+
   const handleLevelChange = (level) => {
     setLevel(level);
   };
@@ -71,7 +87,7 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <UpgradeList upgrades={hideoutModules} />
+      <UpgradeList upgrades={hideoutModules} checkUpgrades={checkUpgrades} />
       <SearchBar
         value={searchWord}
         handleSearch={handleSearch}
