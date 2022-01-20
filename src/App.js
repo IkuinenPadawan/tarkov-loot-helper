@@ -12,6 +12,7 @@ function App() {
   const [level, setLevel] = useState(1);
   const [items, setItems] = useState(data.items);
   const [quests, setQuests] = useState(data.quests);
+  const [hideoutModules, setHideoutModules] = useState(data.upgrades);
   const [searchWord, setSearchWord] = useState('');
   const [searchResults, setSearchResults] = useState();
 
