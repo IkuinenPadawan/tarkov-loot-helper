@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+import { FaSearch } from 'react-icons/fa';
+
 const SearchBar = ({ handleSearch, value, searchResults }) => {
   const [visible, setVisible] = useState(false);
   const wrapperRef = useRef(null);
@@ -33,11 +35,15 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
   return (
     <div className='search'>
       <label>Search</label>
-      <input
-        value={value}
-        onClick={() => setVisible(true)}
-        onChange={(e) => handleChange(e.target.value)}
-      />
+      <div className='searchbar'>
+        <FaSearch />
+        <input
+          value={value}
+          onClick={() => setVisible(true)}
+          onChange={(e) => handleChange(e.target.value)}
+          placeholder='Search items...'
+        />
+      </div>
       <div className='dropdown' ref={wrapperRef}>
         {value !== '' && visible
           ? searchResults.map((item, key) => {
