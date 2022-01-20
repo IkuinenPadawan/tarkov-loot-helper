@@ -46,7 +46,6 @@ function App() {
 
   // Handle user clicking hideout upgrades complete
   const checkUpgrades = (id) => {
-    console.log(id);
     let data = [];
     data.push(...hideoutModules);
     const newData = data.map((module) => {

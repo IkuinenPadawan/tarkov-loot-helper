@@ -1,7 +1,6 @@
 import React from 'react';
 
 const HideoutUpgradePicker = ({ upgrades, checkUpgrades }) => {
-  console.log(upgrades);
   const handleChange = (e) => {
     checkUpgrades(parseInt(e.target.id));
   };
