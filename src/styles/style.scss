@@ -55,9 +55,8 @@ body {
 
 // SEARCH BAR //
 .search {
-  margin-top: 2rem;
-  margin: auto;
-  width: 400px;
+  margin: 2rem auto;
+  width: 50%;
 
   label {
     margin-right: 1rem;
@@ -69,7 +68,7 @@ body {
     background-color: #333;
     padding-left: 0.5rem;
     input {
-      width: 400px;
+      width: 100%;
       height: 2rem;
       background-color: #333;
       border: none;
@@ -84,7 +83,7 @@ body {
   }
 
   .dropdown {
-    background-color: rgb(47, 47, 47);
+    background-color: #333;
     cursor: pointer;
   }
 }

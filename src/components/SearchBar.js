@@ -34,7 +34,6 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
 
   return (
     <div className='search'>
-      <label>Search</label>
       <div className='searchbar'>
         <FaSearch />
         <input
