@@ -1,15 +1,13 @@
 import React from 'react';
 
 const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
-  console.log(relatedQuests);
-  console.log(relatedUpgrades);
   return (
     <li className='item'>
       <p className='item-name'>{name}</p>
       <div className='item-data'>
         <img src={img} alt='' />
       </div>
-      <h4>Quests</h4>
+      {relatedQuests.length < 1 ? '' : <h4>Quests</h4>}
       {relatedQuests.map((quest) =>
         quest.completed ? (
           ''
@@ -21,7 +19,7 @@ const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
           </div>
         )
       )}
-      <h4>Hideout upgrades</h4>
+      {relatedUpgrades.length < 1 ? '' : <h4>Hideout upgrades</h4>}
       {relatedUpgrades.map((upgrade) =>
         upgrade.completed ? (
           ''
