@@ -1,6 +1,14 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(36, 36, 36);
-  color: white;
+  background-color: $bgColor;
+  color: $textColor;
 }
 
 .quest-list,
@@ -15,61 +23,63 @@ body {
   display: flex;
 }
 
+// ITEM LIST //
 .item-list {
   width: 50%;
   list-style: none;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
+  .item-data {
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+  }
+  // ITEM //
+  .item {
+    margin-bottom: 2rem;
+    .item-name {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .related-quests-upgrades {
+      border: 1px solid black;
+      .related-list {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(41, 34, 28);
+      }
+    }
+  }
 }
 
-.item-data {
-  display: flex;
-  margin: 0.5rem 0;
-  align-items: center;
-}
-
-.item {
-  border-bottom: 1px solid #000;
-  margin-bottom: 2rem;
-}
-
-.item-name {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.item-quest-list {
-  display: flex;
-  justify-content: space-between;
-}
-
+// SEARCH BAR //
 .search {
   margin-top: 2rem;
   margin: auto;
   width: 400px;
-}
 
-.search label {
-  margin-right: 1rem;
-}
+  label {
+    margin-right: 1rem;
+  }
 
-.search input {
-  width: 400px;
-  height: 2rem;
-  background-color: #333;
-  border: none;
-  border-bottom: 2px solid white;
-  color: white;
-  font-size: 1.2rem;
-  padding: 0;
-}
+  input {
+    width: 400px;
+    height: 2rem;
+    background-color: #333;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0;
+  }
 
-.search input:focus {
-  outline: none;
-}
+  input:focus {
+    outline: none;
+  }
 
-.dropdown {
-  background-color: rgb(47, 47, 47);
-  cursor: pointer;
+  .dropdown {
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+  }
 }
