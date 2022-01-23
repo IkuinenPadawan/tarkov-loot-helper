@@ -51,8 +51,14 @@ const QuestList = ({ quests, checkQuests }) => {
 
   return (
     <div>
-      <h4>Quests completed</h4>
-      <QuestPicker quests={quests} checkQuests={checkQuests} />
+      <QuestPicker quests={prapor} checkQuests={checkQuests} />
+      <QuestPicker quests={therapist} checkQuests={checkQuests} />
+      <QuestPicker quests={fence} checkQuests={checkQuests} />
+      <QuestPicker quests={skier} checkQuests={checkQuests} />
+      <QuestPicker quests={peacekeeper} checkQuests={checkQuests} />
+      <QuestPicker quests={mechanic} checkQuests={checkQuests} />
+      <QuestPicker quests={ragman} checkQuests={checkQuests} />
+      <QuestPicker quests={jaeger} checkQuests={checkQuests} />
     </div>
   );
 };
