@@ -53,34 +53,42 @@ const QuestList = ({ quests, checkQuests }) => {
     <div className='quests-container'>
       <div className='quest-giver'>
         <h4>Prapor</h4>
+        <img src='img/Prapor.jpg' alt='Prapor'></img>
         <QuestPicker quests={prapor} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Therapist</h4>
+        <img src='img/Therapist.jpg' alt='Therapist'></img>
         <QuestPicker quests={therapist} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Fence</h4>
+        <img src='img/Fence.png' alt='Fence'></img>
         <QuestPicker quests={fence} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Skier</h4>
+        <img src='img/Skier.jpg' alt='Skier'></img>
         <QuestPicker quests={skier} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Peacekeeper</h4>
+        <img src='img/Peacekeeper.jpg' alt='Peacekeeper'></img>
         <QuestPicker quests={peacekeeper} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Mechanic</h4>
+        <img src='img/Mechanic.jpg' alt='Mechanic'></img>
         <QuestPicker quests={mechanic} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Ragman</h4>
+        <img src='img/Ragman.jpg' alt='Ragman'></img>
         <QuestPicker quests={ragman} checkQuests={checkQuests} />
       </div>
       <div className='quest-giver'>
         <h4>Jaeger</h4>
+        <img src='img/Jaeger.jpg' alt='Jaeger'></img>
         <QuestPicker quests={jaeger} checkQuests={checkQuests} />
       </div>
     </div>
