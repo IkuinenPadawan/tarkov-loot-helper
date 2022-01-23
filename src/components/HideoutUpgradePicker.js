@@ -9,7 +9,7 @@ const HideoutUpgradePicker = ({ upgrades, checkUpgrades }) => {
       <ul className='upgrade-list'>
         {upgrades.map((module) => (
           <li>
-            <div className='list-item'>
+            <div className='list-item checkbox-container'>
               <input
                 type='checkbox'
                 id={module.id}

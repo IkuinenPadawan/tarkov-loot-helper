@@ -12,6 +12,16 @@ body {
   color: $textColor;
 }
 
+.checkbox-container {
+  label {
+    cursor: pointer;
+  }
+
+  input[type='checkbox'] {
+    cursor: pointer;
+  }
+}
+
 .upgrades-list {
   margin-top: 1rem;
 }
@@ -60,7 +70,8 @@ body {
     padding-bottom: 1rem;
     width: 25%;
     h4 {
-      background-color: black;
+      background-color: #383123;
+      text-align: center;
     }
   }
 }

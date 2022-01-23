@@ -11,7 +11,7 @@ const QuestPicker = ({ quests, checkQuests }) => {
       <ul className='quest-list'>
         {quests.map((quest) => (
           <li>
-            <div className='list-item'>
+            <div className='list-item checkbox-container'>
               <input
                 type='checkbox'
                 id={quest.id}
