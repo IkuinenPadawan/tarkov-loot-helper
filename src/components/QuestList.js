@@ -50,15 +50,39 @@ const QuestList = ({ quests, checkQuests }) => {
   }
 
   return (
-    <div>
-      <QuestPicker quests={prapor} checkQuests={checkQuests} />
-      <QuestPicker quests={therapist} checkQuests={checkQuests} />
-      <QuestPicker quests={fence} checkQuests={checkQuests} />
-      <QuestPicker quests={skier} checkQuests={checkQuests} />
-      <QuestPicker quests={peacekeeper} checkQuests={checkQuests} />
-      <QuestPicker quests={mechanic} checkQuests={checkQuests} />
-      <QuestPicker quests={ragman} checkQuests={checkQuests} />
-      <QuestPicker quests={jaeger} checkQuests={checkQuests} />
+    <div className='quests-container'>
+      <div className='quest-giver'>
+        <h4>Prapor</h4>
+        <QuestPicker quests={prapor} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Therapist</h4>
+        <QuestPicker quests={therapist} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Fence</h4>
+        <QuestPicker quests={fence} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Skier</h4>
+        <QuestPicker quests={skier} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Peacekeeper</h4>
+        <QuestPicker quests={peacekeeper} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Mechanic</h4>
+        <QuestPicker quests={mechanic} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Ragman</h4>
+        <QuestPicker quests={ragman} checkQuests={checkQuests} />
+      </div>
+      <div className='quest-giver'>
+        <h4>Jaeger</h4>
+        <QuestPicker quests={jaeger} checkQuests={checkQuests} />
+      </div>
     </div>
   );
 };
