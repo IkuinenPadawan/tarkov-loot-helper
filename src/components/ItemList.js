@@ -55,6 +55,7 @@ const ItemList = ({ items, activeQuests, searchWord, hideoutModules }) => {
             moduleName: upgrade.moduleName,
             amount: item.amount,
             completed: upgrade.moduleLevels.levelOne.completed,
+            level: Object.keys(upgrade.moduleLevels)[0],
           };
           upgradeList.push(upgrades);
         }

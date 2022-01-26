@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
+  console.log(relatedUpgrades);
   return (
     <li className='item'>
       <p className='item-name'>{name}</p>
@@ -8,28 +9,53 @@ const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
         <img src={img} alt='' />
       </div>
       {relatedQuests.length < 1 ? '' : <h4>Quests</h4>}
-      {relatedQuests.map((quest) =>
-        quest.completed ? (
+      <table>
+        {relatedQuests.length < 1 ? (
           ''
         ) : (
-          <div className='item-quest-list'>
-            <p>{quest.questGiver}</p>
-            <p>{quest.questName}</p>
-            <p>x{quest.amount}</p>
-          </div>
-        )
-      )}
+          <tr>
+            <th>Guest giver</th>
+            <th>Guest name</th>
+            <th>Amount</th>
+          </tr>
+        )}
+
+        {relatedQuests.map((quest) =>
+          quest.completed ? (
+            ''
+          ) : (
+            <tr>
+              <td>{quest.questGiver}</td>
+              <td>{quest.questName}</td>
+              <td>{quest.amount}</td>
+            </tr>
+          )
+        )}
+      </table>
       {relatedUpgrades.length < 1 ? '' : <h4>Hideout upgrades</h4>}
-      {relatedUpgrades.map((upgrade) =>
-        upgrade.completed ? (
+      <table>
+        {relatedUpgrades.length < 1 ? (
           ''
         ) : (
-          <div className='item-quest-list'>
-            <p>{upgrade.moduleName}</p>
-            <p>x{upgrade.amount}</p>
-          </div>
-        )
-      )}
+          <tr>
+            <th>Module name</th>
+            <th>Module level</th>
+            <th>Amount</th>
+          </tr>
+        )}
+
+        {relatedUpgrades.map((upgrade) =>
+          upgrade.completed ? (
+            ''
+          ) : (
+            <tr>
+              <td>{upgrade.moduleName}</td>
+              <td>{upgrade.level}</td>
+              <td>{upgrade.amount}</td>
+            </tr>
+          )
+        )}
+      </table>
     </li>
   );
 };

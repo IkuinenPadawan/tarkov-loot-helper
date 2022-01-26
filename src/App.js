@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import './App.css';
+import './styles/style.scss';
 import Header from './components/Header';
 import ItemList from './components/ItemList';
 import LevelPicker from './components/LevelPicker';

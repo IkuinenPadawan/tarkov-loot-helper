@@ -6,10 +6,10 @@ const HideoutUpgradePicker = ({ upgrades, checkUpgrades }) => {
   };
   return (
     <div>
-      <ul className='quest-list'>
+      <ul className='upgrade-list'>
         {upgrades.map((module) => (
           <li>
-            <div className='quest-list-item'>
+            <div className='list-item checkbox-container'>
               <input
                 type='checkbox'
                 id={module.id}
@@ -18,9 +18,7 @@ const HideoutUpgradePicker = ({ upgrades, checkUpgrades }) => {
                 onChange={handleChange}
                 checked={module.moduleLevels.levelOne.completed ? true : false}
               />
-              <label htmlFor={module.moduleName}>
-                {module.moduleName} - 'level1'{' '}
-              </label>
+              <label htmlFor={module.moduleName}>{module.moduleName}</label>
             </div>
           </li>
         ))}
