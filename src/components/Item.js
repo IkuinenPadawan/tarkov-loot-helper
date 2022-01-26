@@ -1,37 +1,61 @@
 import React from 'react';
 
 const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
+  console.log(relatedUpgrades);
   return (
     <li className='item'>
       <p className='item-name'>{name}</p>
       <div className='item-data'>
         <img src={img} alt='' />
       </div>
-      <ul className='related-quests-upgrades'>
-        {relatedQuests.length < 1 ? '' : <h4>Quests</h4>}
+      {relatedQuests.length < 1 ? '' : <h4>Quests</h4>}
+      <table>
+        {relatedQuests.length < 1 ? (
+          ''
+        ) : (
+          <tr>
+            <th>Guest giver</th>
+            <th>Guest name</th>
+            <th>Amount</th>
+          </tr>
+        )}
+
         {relatedQuests.map((quest) =>
           quest.completed ? (
             ''
           ) : (
-            <li className='related-list'>
-              <p>{quest.questGiver}</p>
-              <p>{quest.questName}</p>
-              <p>x{quest.amount}</p>
-            </li>
+            <tr>
+              <td>{quest.questGiver}</td>
+              <td>{quest.questName}</td>
+              <td>{quest.amount}</td>
+            </tr>
           )
         )}
-        {relatedUpgrades.length < 1 ? '' : <h4>Hideout upgrades</h4>}
+      </table>
+      {relatedUpgrades.length < 1 ? '' : <h4>Hideout upgrades</h4>}
+      <table>
+        {relatedUpgrades.length < 1 ? (
+          ''
+        ) : (
+          <tr>
+            <th>Module name</th>
+            <th>Module level</th>
+            <th>Amount</th>
+          </tr>
+        )}
+
         {relatedUpgrades.map((upgrade) =>
           upgrade.completed ? (
             ''
           ) : (
-            <li className='related-list'>
-              <p>{upgrade.moduleName}</p>
-              <p>x{upgrade.amount}</p>
-            </li>
+            <tr>
+              <td>{upgrade.moduleName}</td>
+              <td>{upgrade.level}</td>
+              <td>{upgrade.amount}</td>
+            </tr>
           )
         )}
-      </ul>
+      </table>
     </li>
   );
 };
