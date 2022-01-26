@@ -31,7 +31,7 @@ table {
   }
 
   tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgb(36, 36, 36);
   }
 }
 
@@ -54,7 +54,7 @@ table {
     height: 1em;
     border-radius: 0.15em;
     margin-right: 0.5em;
-    border: 0.05em solid black;
+    border: 0.05em solid #4d3d1d;
   }
 
   input[type='checkbox'] {
@@ -142,6 +142,7 @@ table {
   // ITEM //
   .item {
     margin-bottom: 2rem;
+    padding-top: 0.6rem;
     background-color: rgb(26, 26, 26);
     // border-bottom: 3px solid black;
     .item-name {
@@ -151,7 +152,7 @@ table {
     h4 {
       padding: 0.3rem 0;
       // margin: 0.5rem 0;
-      border: 1px solid black;
+      border: 1px solid #383123;
       border-bottom: none;
     }
   }
