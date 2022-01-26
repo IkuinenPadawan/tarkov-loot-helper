@@ -2,7 +2,8 @@
   "name": "tarkov-loot-helper",
   "version": "0.5.0",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "8.x"
   },
   "private": true,
   "dependencies": {
