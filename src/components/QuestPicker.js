@@ -11,7 +11,7 @@ const QuestPicker = ({ quests, checkQuests }) => {
       <ul className='quest-list'>
         {quests.map((quest) => (
           <li>
-            <div className='quest-list-item'>
+            <div className='list-item checkbox-container'>
               <input
                 type='checkbox'
                 id={quest.id}
@@ -20,9 +20,7 @@ const QuestPicker = ({ quests, checkQuests }) => {
                 onChange={handleChange}
                 checked={quest.completed ? true : false}
               />
-              <label htmlFor={quest.questName}>
-                {quest.questName} - {quest.questGiver}{' '}
-              </label>
+              <label htmlFor={quest.questName}>{quest.questName}</label>
             </div>
           </li>
         ))}
