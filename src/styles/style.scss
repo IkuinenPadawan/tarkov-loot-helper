@@ -136,10 +136,14 @@ table {
     display: flex;
     margin: 0.5rem 0;
     align-items: center;
+    justify-content: center;
   }
+
   // ITEM //
   .item {
     margin-bottom: 2rem;
+    background-color: rgb(26, 26, 26);
+    // border-bottom: 3px solid black;
     .item-name {
       font-size: 1.2rem;
       font-weight: 500;
