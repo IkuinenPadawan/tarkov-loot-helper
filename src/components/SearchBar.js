@@ -51,7 +51,8 @@ const SearchBar = ({ handleSearch, value, searchResults }) => {
                   className='dropdown-item'
                   onClick={() => handleSelect(item.name)}
                 >
-                  {item.name}
+                  <img src={item.img} alt='item'></img>
+                  <p>{item.name}</p>
                 </div>
               );
             })
