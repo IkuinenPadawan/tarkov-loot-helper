@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import UpgradeList from './UpgradeList';
 
-const UpgradeTabs = ({ upgrades, checkUpgrades }) => {
+const TabContainer = ({ upgrades, checkUpgrades }) => {
   const [level, setLevel] = useState(1);
   const [activeTab, setActiveTab] = useState(1);
   const activeImage = {
@@ -40,9 +40,9 @@ const UpgradeTabs = ({ upgrades, checkUpgrades }) => {
       >
         <h3>Level 3</h3>
       </div>
-      {/* <UpgradeList upgrades={upgrades} checkUpgrades={checkUpgrades} /> */}
+      <UpgradeList upgrades={upgrades} checkUpgrades={checkUpgrades} />
     </div>
   );
 };
 
-export default UpgradeTabs;
+export default TabContainer;

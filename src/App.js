@@ -9,7 +9,7 @@ import QuestList from './components/QuestList';
 import UpgradeList from './components/UpgradeList';
 import SearchBar from './components/SearchBar';
 import data from './data/data.json';
-import UpgradeTabs from './components/UpgradeTabs';
+import TabContainer from './components/TabContainer';
 
 function App() {
   const [level, setLevel] = useState(1);
@@ -95,7 +95,7 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <UpgradeTabs upgrades={hideoutModules} checkUpgrades={checkUpgrades} />
+      <TabContainer upgrades={hideoutModules} checkUpgrades={checkUpgrades} />
       <SearchBar
         value={searchWord}
         handleSearch={handleSearch}
