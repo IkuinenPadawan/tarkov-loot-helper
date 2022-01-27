@@ -634,6 +634,26 @@
       "id": 127,
       "name": "TerraGroup Labs access keycard",
       "img": "img/Terragroup_Labs_access_keycard_icon.png"
+    },
+    {
+      "id": 128,
+      "name": "Toolset",
+      "img": "img/Toolsicon.png"
+    },
+    {
+      "id": 129,
+      "name": "Electric drill",
+      "img": "img/Electric_Drill_icon.png"
+    },
+    {
+      "id": 130,
+      "name": "Weapon parts",
+      "img": "img/WeaponPartsIcon.png"
+    },
+    {
+      "id": 131,
+      "name": "Electric motor",
+      "img": "img/Electric_motor_icon.png"
     }
   ],
   "quests": [
@@ -1361,6 +1381,15 @@
             { "id": 38, "amount": 5 },
             { "id": 23, "amount": 4 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 128, "amount": 2 },
+            { "id": 55, "amount": 6 },
+            { "id": 38, "amount": 2 },
+            { "id": 122, "amount": 2 }
+          ]
         }
       }
     },
@@ -1374,6 +1403,15 @@
             { "id": 37, "amount": 2 },
             { "id": 38, "amount": 2 },
             { "id": 44, "amount": 1 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 128, "amount": 3 },
+            { "id": 129, "amount": 2 },
+            { "id": 38, "amount": 6 },
+            { "id": 130, "amount": 3 }
           ]
         }
       }
