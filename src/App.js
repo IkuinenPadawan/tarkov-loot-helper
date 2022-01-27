@@ -61,8 +61,30 @@ function App() {
     const newData = data.map((module) => {
       let obj = { ...module };
       if (module.id === id) {
-        obj.moduleLevels.levelOne.completed =
-          !obj.moduleLevels.levelOne.completed;
+        switch (levelShown) {
+          case 1:
+            obj.moduleLevels.levelOne.completed =
+              !obj.moduleLevels.levelOne.completed;
+            break;
+          case 2:
+            obj.moduleLevels.levelTwo.completed =
+              !obj.moduleLevels.levelTwo.completed;
+            if (obj.moduleLevels.levelOne.completed === false) {
+              obj.moduleLevels.levelOne.completed = true;
+            }
+            break;
+          case 3:
+            obj.moduleLevels.levelThree.completed =
+              !obj.moduleLevels.levelThree.completed;
+            if (obj.moduleLevels.levelOne.completed === false) {
+              obj.moduleLevels.levelOne.completed = true;
+            }
+            if (obj.moduleLevels.levelTwo.completed === false) {
+              obj.moduleLevels.levelTwo.completed = true;
+            }
+            break;
+          default:
+        }
       }
       return obj;
     });
