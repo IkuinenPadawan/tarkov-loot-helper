@@ -11,6 +11,8 @@ const QuestList = ({ quests, checkQuests }) => {
   const ragman = [];
   const jaeger = [];
 
+  console.log(quests);
+
   for (const quest of quests) {
     switch (quest.questGiver) {
       case 'Prapor':
