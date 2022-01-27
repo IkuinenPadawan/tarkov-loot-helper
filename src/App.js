@@ -18,6 +18,7 @@ function App() {
   const [hideoutModules, setHideoutModules] = useState(data.upgrades);
   const [searchWord, setSearchWord] = useState('');
   const [searchResults, setSearchResults] = useState();
+  const [levelShown, setLevelShown] = useState(1);
 
   // Fetch quests from local storage if exists
   useEffect(() => {
@@ -95,7 +96,12 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <TabContainer upgrades={hideoutModules} checkUpgrades={checkUpgrades} />
+      <TabContainer levelShown={levelShown} setLevelShown={setLevelShown} />
+      <UpgradeList
+        levelShown={levelShown}
+        upgrades={hideoutModules}
+        checkUpgrades={checkUpgrades}
+      />
       <SearchBar
         value={searchWord}
         handleSearch={handleSearch}
