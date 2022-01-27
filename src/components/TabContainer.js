@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import UpgradeList from './UpgradeList';
 import Tab from './Tab';
 
-const TabContainer = ({ upgrades, checkUpgrades }) => {
-  const [level, setLevel] = useState(1);
+const TabContainer = (props) => {
   const [activeTab, setActiveTab] = useState(1);
   const activeImage = {
     backgroundImage: 'url(img/tab_hideout.png)',
@@ -38,33 +36,6 @@ const TabContainer = ({ upgrades, checkUpgrades }) => {
         defaultImg={defaultImg}
         text={'Level 3'}
       />
-      {/* <div
-        className='tab'
-        style={activeTab === 1 ? activeImage : defaultImg}
-        onClick={() => {
-          setActiveTab(1);
-        }}
-      >
-        <h3>Level 1</h3>
-      </div>
-      <div
-        className='tab'
-        style={activeTab === 2 ? activeImage : defaultImg}
-        onClick={() => {
-          setActiveTab(2);
-        }}
-      >
-        <h3>Level 2</h3>
-      </div>
-      <div
-        className='tab'
-        style={activeTab === 3 ? activeImage : defaultImg}
-        onClick={() => {
-          setActiveTab(3);
-        }}
-      >
-        <h3>Level 3</h3>
-      </div> */}
     </div>
   );
 };
