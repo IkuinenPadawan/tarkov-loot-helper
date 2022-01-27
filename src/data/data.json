@@ -714,6 +714,26 @@
       "id": 143,
       "name": "Medical tools",
       "img": "img/Medical_tools.png"
+    },
+    {
+      "id": 144,
+      "name": "Wrench",
+      "img": "img/Wrench_Icon.png"
+    },
+    {
+      "id": 145,
+      "name": "Majaica coffee",
+      "img": "img/Coffeicon.png"
+    },
+    {
+      "id": 146,
+      "name": "Sodium bicarbonate",
+      "img": "img/Sodium_Bicarbonate_icon.png"
+    },
+    {
+      "id": 147,
+      "name": "Smoked Chimney drain cleaner",
+      "img": "img/Smokedchimneydraincleanericon.png"
     }
   ],
   "quests": [
@@ -1496,6 +1516,23 @@
           "items": [
             { "id": 29, "amount": 1 },
             { "id": 40, "amount": 2 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 144, "amount": 4 },
+            { "id": 23, "amount": 2 },
+            { "id": 95, "amount": 2 },
+            { "id": 40, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 145, "amount": 3 },
+            { "id": 146, "amount": 3 },
+            { "id": 147, "amount": 2 }
           ]
         }
       }
