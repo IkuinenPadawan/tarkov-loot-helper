@@ -679,6 +679,41 @@
       "id": 136,
       "name": "Energy-saving lamp",
       "img": "img/Energy-Saving_Lamp_Icon.png"
+    },
+    {
+      "id": 137,
+      "name": "Damaged hard drive",
+      "img": "img/Damaged_Hard_Drive_Icon.png"
+    },
+    {
+      "id": 138,
+      "name": "Secured magnetic tape cassette",
+      "img": "img/SMT_Icon.png"
+    },
+    {
+      "id": 139,
+      "name": "Sewing kit",
+      "img": "img/SewingKit_Icon.png"
+    },
+    {
+      "id": 140,
+      "name": "Xenomorph sealing foam",
+      "img": "img/Xenoicon.png"
+    },
+    {
+      "id": 141,
+      "name": "Saline solution",
+      "img": "img/Saline_Solution_icon.png"
+    },
+    {
+      "id": 142,
+      "name": "Esmarch tourniquet",
+      "img": "img/TournIcon.png"
+    },
+    {
+      "id": 143,
+      "name": "Medical tools",
+      "img": "img/Medical_tools.png"
     }
   ],
   "quests": [
@@ -1350,6 +1385,25 @@
             { "id": 68, "amount": 1 },
             { "id": 69, "amount": 1 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 68, "amount": 3 },
+            { "id": 10, "amount": 3 },
+            { "id": 29, "amount": 4 },
+            { "id": 137, "amount": 5 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 105, "amount": 2 },
+            { "id": 60, "amount": 2 },
+            { "id": 6, "amount": 1 },
+            { "id": 58, "amount": 4 },
+            { "id": 138, "amount": 1 }
+          ]
         }
       }
     },
@@ -1363,6 +1417,25 @@
             { "id": 48, "amount": 1 },
             { "id": 49, "amount": 1 },
             { "id": 50, "amount": 1 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 122, "amount": 1 },
+            { "id": 23, "amount": 3 },
+            { "id": 37, "amount": 5 },
+            { "id": 129, "amount": 1 },
+            { "id": 139, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 140, "amount": 3 },
+            { "id": 23, "amount": 6 },
+            { "id": 62, "amount": 2 },
+            { "id": 128, "amount": 1 }
           ]
         }
       }
@@ -1393,6 +1466,23 @@
             { "id": 41, "amount": 1 },
             { "id": 42, "amount": 1 },
             { "id": 43, "amount": 2 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 141, "amount": 3 },
+            { "id": 92, "amount": 2 },
+            { "id": 142, "amount": 5 },
+            { "id": 143, "amount": 3 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 87, "amount": 1 },
+            { "id": 141, "amount": 4 },
+            { "id": 88, "amount": 1 }
           ]
         }
       }
