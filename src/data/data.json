@@ -654,6 +654,31 @@
       "id": 131,
       "name": "Electric motor",
       "img": "img/Electric_motor_icon.png"
+    },
+    {
+      "id": 132,
+      "name": "Bulbex cable cutter",
+      "img": "img/Bulbex_cable_cutter_icon1.png"
+    },
+    {
+      "id": 133,
+      "name": "Dry fuel",
+      "img": "img/Dryfuelicon.png"
+    },
+    {
+      "id": 134,
+      "name": "Hunting matches",
+      "img": "img/HunterMatches_Icon.png"
+    },
+    {
+      "id": 135,
+      "name": "Light bulb",
+      "img": "img/Bulb_icon.png"
+    },
+    {
+      "id": 136,
+      "name": "Energy-saving lamp",
+      "img": "img/Energy-Saving_Lamp_Icon.png"
     }
   ],
   "quests": [
@@ -1192,6 +1217,26 @@
             { "id": 61, "amount": 10 },
             { "id": 35, "amount": 15 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 35, "amount": 15 },
+            { "id": 61, "amount": 10 },
+            { "id": 27, "amount": 15 },
+            { "id": 40, "amount": 5 },
+            { "id": 54, "amount": 2 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 35, "amount": 25 },
+            { "id": 64, "amount": 15 },
+            { "id": 131, "amount": 10 },
+            { "id": 62, "amount": 10 },
+            { "id": 84, "amount": 1 }
+          ]
         }
       }
     },
@@ -1220,6 +1265,25 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 13, "amount": 1 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 132, "amount": 1 },
+            { "id": 40, "amount": 5 },
+            { "id": 131, "amount": 1 },
+            { "id": 107, "amount": 15 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 61, "amount": 5 },
+            { "id": 40, "amount": 6 },
+            { "id": 131, "amount": 3 },
+            { "id": 13, "amount": 10 },
+            { "id": 45, "amount": 7 }
+          ]
         }
       }
     },
@@ -1230,6 +1294,23 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 52, "amount": 2 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 52, "amount": 3 },
+            { "id": 134, "amount": 2 },
+            { "id": 51, "amount": 3 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 63, "amount": 8 },
+            { "id": 107, "amount": 8 },
+            { "id": 40, "amount": 4 },
+            { "id": 55, "amount": 2 }
+          ]
         }
       }
     },
@@ -1240,6 +1321,21 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 51, "amount": 1 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 107, "amount": 14 },
+            { "id": 51, "amount": 5 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 108, "amount": 7 },
+            { "id": 136, "amount": 12 },
+            { "id": 107, "amount": 6 }
+          ]
         }
       }
     },
