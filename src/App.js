@@ -9,6 +9,7 @@ import QuestList from './components/QuestList';
 import UpgradeList from './components/UpgradeList';
 import SearchBar from './components/SearchBar';
 import data from './data/data.json';
+import TabContainer from './components/TabContainer';
 
 function App() {
   const [level, setLevel] = useState(1);
@@ -17,6 +18,7 @@ function App() {
   const [hideoutModules, setHideoutModules] = useState(data.upgrades);
   const [searchWord, setSearchWord] = useState('');
   const [searchResults, setSearchResults] = useState();
+  const [levelShown, setLevelShown] = useState(1);
 
   // Fetch quests from local storage if exists
   useEffect(() => {
@@ -59,8 +61,30 @@ function App() {
     const newData = data.map((module) => {
       let obj = { ...module };
       if (module.id === id) {
-        obj.moduleLevels.levelOne.completed =
-          !obj.moduleLevels.levelOne.completed;
+        switch (levelShown) {
+          case 1:
+            obj.moduleLevels.levelOne.completed =
+              !obj.moduleLevels.levelOne.completed;
+            break;
+          case 2:
+            obj.moduleLevels.levelTwo.completed =
+              !obj.moduleLevels.levelTwo.completed;
+            if (obj.moduleLevels.levelOne.completed === false) {
+              obj.moduleLevels.levelOne.completed = true;
+            }
+            break;
+          case 3:
+            obj.moduleLevels.levelThree.completed =
+              !obj.moduleLevels.levelThree.completed;
+            if (obj.moduleLevels.levelOne.completed === false) {
+              obj.moduleLevels.levelOne.completed = true;
+            }
+            if (obj.moduleLevels.levelTwo.completed === false) {
+              obj.moduleLevels.levelTwo.completed = true;
+            }
+            break;
+          default:
+        }
       }
       return obj;
     });
@@ -94,7 +118,12 @@ function App() {
       <Header title='Tarkov Loot Tool' />
       <LevelPicker levels={20} handleLevelChange={handleLevelChange} />
       <QuestList quests={quests} checkQuests={checkQuests} />
-      <UpgradeList upgrades={hideoutModules} checkUpgrades={checkUpgrades} />
+      <TabContainer levelShown={levelShown} setLevelShown={setLevelShown} />
+      <UpgradeList
+        levelShown={levelShown}
+        upgrades={hideoutModules}
+        checkUpgrades={checkUpgrades}
+      />
       <SearchBar
         value={searchWord}
         handleSearch={handleSearch}

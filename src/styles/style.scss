@@ -35,6 +35,24 @@ table {
   }
 }
 
+// TABS //
+.tab-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .tab {
+    padding: 0.5rem 2rem;
+
+    &:hover {
+      background-color: #534934;
+      cursor: pointer;
+      filter: brightness(100%);
+    }
+  }
+}
+
 // CUSTOM CHECKBOX //
 .checkbox-container {
   display: flex;
