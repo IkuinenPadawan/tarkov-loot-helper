@@ -634,6 +634,161 @@
       "id": 127,
       "name": "TerraGroup Labs access keycard",
       "img": "img/Terragroup_Labs_access_keycard_icon.png"
+    },
+    {
+      "id": 128,
+      "name": "Toolset",
+      "img": "img/Toolsicon.png"
+    },
+    {
+      "id": 129,
+      "name": "Electric drill",
+      "img": "img/Electric_Drill_icon.png"
+    },
+    {
+      "id": 130,
+      "name": "Weapon parts",
+      "img": "img/WeaponPartsIcon.png"
+    },
+    {
+      "id": 131,
+      "name": "Electric motor",
+      "img": "img/Electric_motor_icon.png"
+    },
+    {
+      "id": 132,
+      "name": "Bulbex cable cutter",
+      "img": "img/Bulbex_cable_cutter_icon1.png"
+    },
+    {
+      "id": 133,
+      "name": "Dry fuel",
+      "img": "img/Dryfuelicon.png"
+    },
+    {
+      "id": 134,
+      "name": "Hunting matches",
+      "img": "img/HunterMatches_Icon.png"
+    },
+    {
+      "id": 135,
+      "name": "Light bulb",
+      "img": "img/Bulb_icon.png"
+    },
+    {
+      "id": 136,
+      "name": "Energy-saving lamp",
+      "img": "img/Energy-Saving_Lamp_Icon.png"
+    },
+    {
+      "id": 137,
+      "name": "Damaged hard drive",
+      "img": "img/Damaged_Hard_Drive_Icon.png"
+    },
+    {
+      "id": 138,
+      "name": "Secured magnetic tape cassette",
+      "img": "img/SMT_Icon.png"
+    },
+    {
+      "id": 139,
+      "name": "Sewing kit",
+      "img": "img/SewingKit_Icon.png"
+    },
+    {
+      "id": 140,
+      "name": "Xenomorph sealing foam",
+      "img": "img/Xenoicon.png"
+    },
+    {
+      "id": 141,
+      "name": "Saline solution",
+      "img": "img/Saline_Solution_icon.png"
+    },
+    {
+      "id": 142,
+      "name": "Esmarch tourniquet",
+      "img": "img/TournIcon.png"
+    },
+    {
+      "id": 143,
+      "name": "Medical tools",
+      "img": "img/Medical_tools.png"
+    },
+    {
+      "id": 144,
+      "name": "Wrench",
+      "img": "img/Wrench_Icon.png"
+    },
+    {
+      "id": 145,
+      "name": "Majaica coffee",
+      "img": "img/Coffeicon.png"
+    },
+    {
+      "id": 146,
+      "name": "Sodium bicarbonate",
+      "img": "img/Sodium_Bicarbonate_icon.png"
+    },
+    {
+      "id": 147,
+      "name": "Smoked Chimney drain cleaner",
+      "img": "img/Smokedchimneydraincleanericon.png"
+    },
+    {
+      "id": 148,
+      "name": "DVD drive",
+      "img": "img/DVD_drive_Icon.png"
+    },
+    {
+      "id": 149,
+      "name": "Magnet",
+      "img": "img/Magnet_Icon.png"
+    },
+    {
+      "id": 150,
+      "name": "GreenBat lithium battery",
+      "img": "img/GreenBat_Icon.png"
+    },
+    {
+      "id": 151,
+      "name": "Pliers Elite",
+      "img": "img/PliersElite.png"
+    },
+    {
+      "id": 152,
+      "name": "TP-200 TNT brick",
+      "img": "img/TNT_brick_icon.png"
+    },
+    {
+      "id": 153,
+      "name": "NIXXOR lens",
+      "img": "img/NIXXOR_lens_icon.png"
+    },
+    {
+      "id": 154,
+      "name": "SSD drive",
+      "img": "img/Ssd_icon.png"
+    },
+    {
+      "id": 155,
+      "name": "Ratchet wrench",
+      "img": "img/Ratchet_wrench_icon.png"
+    },
+    {
+      "id": 156,
+      "name": "Shustrilo sealing foam",
+      "img": "img/Shusicon.png"
+    },
+    {
+      "id": 157,
+      "name": "FireKlean gun lube",
+      "img": "img/FireKlean_icon.png"
+    },
+    {
+      "id": 158,
+      "name": "Can of thermite",
+      "img": "img/Can_of_thermite_Icon.png"
     }
   ],
   "quests": [
@@ -1172,6 +1327,26 @@
             { "id": 61, "amount": 10 },
             { "id": 35, "amount": 15 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 35, "amount": 15 },
+            { "id": 61, "amount": 10 },
+            { "id": 27, "amount": 15 },
+            { "id": 40, "amount": 5 },
+            { "id": 54, "amount": 2 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 35, "amount": 25 },
+            { "id": 64, "amount": 15 },
+            { "id": 131, "amount": 10 },
+            { "id": 62, "amount": 10 },
+            { "id": 84, "amount": 1 }
+          ]
         }
       }
     },
@@ -1200,6 +1375,25 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 13, "amount": 1 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 132, "amount": 1 },
+            { "id": 40, "amount": 5 },
+            { "id": 131, "amount": 1 },
+            { "id": 107, "amount": 15 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 61, "amount": 5 },
+            { "id": 40, "amount": 6 },
+            { "id": 131, "amount": 3 },
+            { "id": 13, "amount": 10 },
+            { "id": 45, "amount": 7 }
+          ]
         }
       }
     },
@@ -1210,6 +1404,23 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 52, "amount": 2 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 52, "amount": 3 },
+            { "id": 134, "amount": 2 },
+            { "id": 51, "amount": 3 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 63, "amount": 8 },
+            { "id": 107, "amount": 8 },
+            { "id": 40, "amount": 4 },
+            { "id": 55, "amount": 2 }
+          ]
         }
       }
     },
@@ -1220,6 +1431,21 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 51, "amount": 1 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 107, "amount": 14 },
+            { "id": 51, "amount": 5 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 108, "amount": 7 },
+            { "id": 136, "amount": 12 },
+            { "id": 107, "amount": 6 }
+          ]
         }
       }
     },
@@ -1234,6 +1460,25 @@
             { "id": 68, "amount": 1 },
             { "id": 69, "amount": 1 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 68, "amount": 3 },
+            { "id": 10, "amount": 3 },
+            { "id": 29, "amount": 4 },
+            { "id": 137, "amount": 5 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 105, "amount": 2 },
+            { "id": 60, "amount": 2 },
+            { "id": 6, "amount": 1 },
+            { "id": 58, "amount": 4 },
+            { "id": 138, "amount": 1 }
+          ]
         }
       }
     },
@@ -1247,6 +1492,25 @@
             { "id": 48, "amount": 1 },
             { "id": 49, "amount": 1 },
             { "id": 50, "amount": 1 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 122, "amount": 1 },
+            { "id": 23, "amount": 3 },
+            { "id": 37, "amount": 5 },
+            { "id": 129, "amount": 1 },
+            { "id": 139, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 140, "amount": 3 },
+            { "id": 23, "amount": 6 },
+            { "id": 62, "amount": 2 },
+            { "id": 128, "amount": 1 }
           ]
         }
       }
@@ -1278,6 +1542,23 @@
             { "id": 42, "amount": 1 },
             { "id": 43, "amount": 2 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 141, "amount": 3 },
+            { "id": 92, "amount": 2 },
+            { "id": 142, "amount": 5 },
+            { "id": 143, "amount": 3 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 87, "amount": 1 },
+            { "id": 141, "amount": 4 },
+            { "id": 88, "amount": 1 }
+          ]
         }
       }
     },
@@ -1290,6 +1571,23 @@
           "items": [
             { "id": 29, "amount": 1 },
             { "id": 40, "amount": 2 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 144, "amount": 4 },
+            { "id": 23, "amount": 2 },
+            { "id": 95, "amount": 2 },
+            { "id": 40, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 145, "amount": 3 },
+            { "id": 146, "amount": 3 },
+            { "id": 147, "amount": 2 }
           ]
         }
       }
@@ -1304,6 +1602,23 @@
             { "id": 36, "amount": 1 },
             { "id": 52, "amount": 1 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 136, "amount": 3 },
+            { "id": 148, "amount": 1 },
+            { "id": 149, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 150, "amount": 5 },
+            { "id": 29, "amount": 4 },
+            { "id": 108, "amount": 5 },
+            { "id": 107, "amount": 7 }
+          ]
         }
       }
     },
@@ -1314,6 +1629,23 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 39, "amount": 1 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 151, "amount": 1 },
+            { "id": 152, "amount": 1 },
+            { "id": 21, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 153, "amount": 8 },
+            { "id": 57, "amount": 2 },
+            { "id": 107, "amount": 4 },
+            { "id": 154, "amount": 1 }
+          ]
         }
       }
     },
@@ -1361,6 +1693,23 @@
             { "id": 38, "amount": 5 },
             { "id": 23, "amount": 4 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 128, "amount": 2 },
+            { "id": 55, "amount": 6 },
+            { "id": 38, "amount": 2 },
+            { "id": 122, "amount": 2 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 155, "amount": 1 },
+            { "id": 151, "amount": 2 },
+            { "id": 156, "amount": 5 }
+          ]
         }
       }
     },
@@ -1374,6 +1723,23 @@
             { "id": 37, "amount": 2 },
             { "id": 38, "amount": 2 },
             { "id": 44, "amount": 1 }
+          ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 128, "amount": 3 },
+            { "id": 129, "amount": 2 },
+            { "id": 38, "amount": 6 },
+            { "id": 130, "amount": 3 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 151, "amount": 2 },
+            { "id": 157, "amount": 1 },
+            { "id": 158, "amount": 2 }
           ]
         }
       }
@@ -1391,6 +1757,35 @@
             { "id": 77, "amount": 8 },
             { "id": 78, "amount": 6 },
             { "id": 79, "amount": 4 }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "moduleName": "Vents",
+      "moduleLevels": {
+        "levelOne": {
+          "completed": false,
+          "items": []
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 45, "amount": 2 },
+            { "id": 35, "amount": 3 },
+            { "id": 12, "amount": 1 },
+            { "id": 131, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 27, "amount": 5 },
+            { "id": 131, "amount": 4 },
+            { "id": 45, "amount": 5 },
+            { "id": 107, "amount": 14 },
+            { "id": 12, "amount": 4 }
           ]
         }
       }
