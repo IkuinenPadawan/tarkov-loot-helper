@@ -12,6 +12,7 @@ https://trello.com/b/tITq55yu
 ## Tech/framework used
 Built with
 * React
+* Sass
 
 ## Features
 
