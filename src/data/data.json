@@ -734,6 +734,61 @@
       "id": 147,
       "name": "Smoked Chimney drain cleaner",
       "img": "img/Smokedchimneydraincleanericon.png"
+    },
+    {
+      "id": 148,
+      "name": "DVD drive",
+      "img": "img/DVD_drive_Icon.png"
+    },
+    {
+      "id": 149,
+      "name": "Magnet",
+      "img": "img/Magnet_Icon.png"
+    },
+    {
+      "id": 150,
+      "name": "GreenBat lithium battery",
+      "img": "img/GreenBat_Icon.png"
+    },
+    {
+      "id": 151,
+      "name": "Pliers Elite",
+      "img": "img/PliersElite.png"
+    },
+    {
+      "id": 152,
+      "name": "TP-200 TNT brick",
+      "img": "img/TNT_brick_icon.png"
+    },
+    {
+      "id": 153,
+      "name": "NIXXOR lens",
+      "img": "img/NIXXOR_lens_icon.png"
+    },
+    {
+      "id": 154,
+      "name": "SSD drive",
+      "img": "img/Ssd_icon.png"
+    },
+    {
+      "id": 155,
+      "name": "Ratchet wrench",
+      "img": "img/Ratchet_wrench_icon.png"
+    },
+    {
+      "id": 156,
+      "name": "Shustrilo sealing foam",
+      "img": "img/Shusicon.png"
+    },
+    {
+      "id": 157,
+      "name": "FireKlean gun lube",
+      "img": "img/FireKlean_icon.png"
+    },
+    {
+      "id": 158,
+      "name": "Can of thermite",
+      "img": "img/Can_of_thermite_Icon.png"
     }
   ],
   "quests": [
@@ -1547,6 +1602,23 @@
             { "id": 36, "amount": 1 },
             { "id": 52, "amount": 1 }
           ]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 136, "amount": 3 },
+            { "id": 148, "amount": 1 },
+            { "id": 149, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 150, "amount": 5 },
+            { "id": 29, "amount": 4 },
+            { "id": 108, "amount": 5 },
+            { "id": 107, "amount": 7 }
+          ]
         }
       }
     },
@@ -1557,6 +1629,23 @@
         "levelOne": {
           "completed": false,
           "items": [{ "id": 39, "amount": 1 }]
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 151, "amount": 1 },
+            { "id": 152, "amount": 1 },
+            { "id": 21, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 153, "amount": 8 },
+            { "id": 57, "amount": 2 },
+            { "id": 107, "amount": 4 },
+            { "id": 154, "amount": 1 }
+          ]
         }
       }
     },
@@ -1613,6 +1702,14 @@
             { "id": 38, "amount": 2 },
             { "id": 122, "amount": 2 }
           ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 155, "amount": 1 },
+            { "id": 151, "amount": 2 },
+            { "id": 156, "amount": 5 }
+          ]
         }
       }
     },
@@ -1636,6 +1733,14 @@
             { "id": 38, "amount": 6 },
             { "id": 130, "amount": 3 }
           ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 151, "amount": 2 },
+            { "id": 157, "amount": 1 },
+            { "id": 158, "amount": 2 }
+          ]
         }
       }
     },
@@ -1652,6 +1757,35 @@
             { "id": 77, "amount": 8 },
             { "id": 78, "amount": 6 },
             { "id": 79, "amount": 4 }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "moduleName": "Vents",
+      "moduleLevels": {
+        "levelOne": {
+          "completed": false,
+          "items": []
+        },
+        "levelTwo": {
+          "completed": false,
+          "items": [
+            { "id": 45, "amount": 2 },
+            { "id": 35, "amount": 3 },
+            { "id": 12, "amount": 1 },
+            { "id": 131, "amount": 1 }
+          ]
+        },
+        "levelThree": {
+          "completed": false,
+          "items": [
+            { "id": 27, "amount": 5 },
+            { "id": 131, "amount": 4 },
+            { "id": 45, "amount": 5 },
+            { "id": 107, "amount": 14 },
+            { "id": 12, "amount": 4 }
           ]
         }
       }
