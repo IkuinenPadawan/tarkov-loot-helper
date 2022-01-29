@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Item = ({ name, img, relatedQuests, relatedUpgrades }) => {
+  // console.log('moi' + relatedUpgrades);
   return (
     <li className='item'>
       <p className='item-name'>{name}</p>
